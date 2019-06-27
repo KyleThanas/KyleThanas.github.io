@@ -7,15 +7,14 @@ module.exports = {
                 link: '/'
             },
             {
-                text: 'google',
-                link: 'https://google.com'
+                text: '百度',
+                link: 'https://www.baidu.com/'
             },
         ]
     },
     plugins: [
         [
             'vuepress-plugin-yuque', {
-                // repoUrl: 'https://www.yuque.com/ant-design/course',
                 repoUrl: 'https://www.yuque.com/kylethanas/share',
                 authToken: 'u1XU3a9AAwSEDtNjHXOXZ5ry0xlXwbHlxL49zn9a',
                 html: true,
