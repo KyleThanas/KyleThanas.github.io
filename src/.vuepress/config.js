@@ -3,7 +3,7 @@ module.exports = {
     description: 'KyleThanas的分享',
     themeConfig: {
         nav: [{
-                text: 'Home',
+                text: '首页',
                 link: '/'
             },
             {

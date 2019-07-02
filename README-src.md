@@ -8,6 +8,9 @@ vuepress-plugin-yuque/lib/yuque.js
 const SKIP_CACHE = 1
 ```
 
+
+修改了`src\node_modules\@vuepress\core\lib\client\index.ssr.html`的`meta`标签
+
 ```
     <meta property="og:type" content="webpage">
     <meta property="og:url" content="https://KyleThanas.github.io">
