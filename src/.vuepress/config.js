@@ -7,8 +7,8 @@ module.exports = {
                 link: '/'
             },
             {
-                text: '百度',
-                link: 'https://www.baidu.com/'
+                text: '吐槽',
+                link: 'https://support.qq.com/product/65891'
             },
         ]
     },
