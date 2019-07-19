@@ -21,17 +21,17 @@ module.exports = {
                 home: {
                     actionText: '开始阅读 →',
                     features: [{
-                            title: '循序渐进',
-                            details: '本教程的难度依次递进，为阅读者呈现舒适的学习曲线'
+                            title: '前端知识',
+                            details: '这里面包括一些前端的个人技术总结'
                         },
                         {
-                            title: '值得信赖',
-                            details: '由 antd 团队亲自打造，从技术栈、生态、研发流程等来为你提供系统化的学习体验'
+                            title: '读书',
+                            details: '这是作者看过的书，并且把书中一些精华总结、整理'
                         },
                         {
-                            title: '最佳实践',
-                            details: '通过结合实际开发过程中的案例，来描述不同场景下的最佳实践'
-                        },
+                            title: '杂学',
+                            details: '这是个人兴趣的学习总结'
+                        }
                     ]
                 }
             }
