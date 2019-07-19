@@ -18,3 +18,11 @@ const SKIP_CACHE = 1
     <meta property="og:description" content="KyleThanas的分享">
 ```
 
+## yarn升级包命令
+```
+yarn upgrade
+yarn upgrade left-pad
+yarn upgrade left-pad@^1.0.0
+yarn upgrade left-pad grunt
+yarn upgrade @angular
+```
