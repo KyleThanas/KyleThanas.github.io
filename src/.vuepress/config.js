@@ -1,7 +1,7 @@
 module.exports = {
     title: 'KyleThanas',
     description: 'KyleThanas的分享',
-    dest: '../../dist', //指定 vuepress build 的输出目录
+    dest: '.vuepress/../../dist', //指定 vuepress build 的输出目录
     themeConfig: {
         nav: [{
                 text: '首页',
