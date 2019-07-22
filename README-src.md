@@ -9,6 +9,10 @@ vuepress-plugin-yuque/lib/yuque.js
 const SKIP_CACHE = 1
 ```
 
+#### VuePress中文网
+
+http://caibaojian.com/vuepress/config
+
 
 修改了`src\node_modules\@vuepress\core\lib\client\index.ssr.html`的`meta`标签
 
