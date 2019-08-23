@@ -23,8 +23,11 @@ http://caibaojian.com/vuepress/config
     <meta property="og:description" content="KyleThanas的分享">
 ```
 
-## yarn升级包命令
+## yarn安装包、升级包命令
 ```
+npm install -g yarn
+yarn install
+
 yarn upgrade
 yarn upgrade left-pad
 yarn upgrade left-pad@^1.0.0
