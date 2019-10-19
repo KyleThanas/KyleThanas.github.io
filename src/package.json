@@ -7,11 +7,9 @@
     "dev": "vuepress dev .",
     "build": "vuepress build ."
   },
-  "devDependencies": {
-    "vuepress": "^1.0.0-alpha.44",
-    "vuepress-plugin-yuque": "^0.3.1"
-  },
   "dependencies": {
-    "js-yaml": "3.13.1"
-  }
+    "vuepress": "^1.2.0",
+    "vuepress-plugin-yuque": "^0.6.0"
+  },
+  "devDependencies": {}
 }
