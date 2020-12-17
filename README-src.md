@@ -1,6 +1,8 @@
 #### 使用方式
 
 ```
+使用yarn
+
 yarn dev 启动服务
 yarn build 打包，打包后直接扔在根目录就可以
 
@@ -23,7 +25,7 @@ http://caibaojian.com/vuepress/config
     <meta property="og:description" content="KyleThanas的分享">
 ```
 
-## yarn 安装包、升级包命令
+<!-- ## yarn 安装包、升级包命令
 
 ```
 npm install -g yarn
@@ -34,4 +36,4 @@ yarn upgrade left-pad
 yarn upgrade left-pad@^1.0.0
 yarn upgrade left-pad grunt
 yarn upgrade @angular
-```
+``` -->

@@ -47,7 +47,8 @@ module.exports = {
               title: '杂学',
               details: '这是个人兴趣的学习总结'
             }
-          ]
+          ],
+          footer: `Copyright © kylethanas`
         }
       }
     ]
