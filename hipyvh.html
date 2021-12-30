@@ -4,734 +4,738 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>页面间传值 | KyleThanas</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/kyle/favicon.ico">
     <meta name="description" content="KyleThanas的分享">
-    <meta name="generator" content="VuePress 1.3.1">
     <meta name="referrer" content="never">
-  <meta name="og:type" content="webpage">
-  <meta name="og:url" content="https://KyleThanas.github.io">
-  <meta name="og:title" content="KyleThanas知识分享">
-  <meta name="og:description" content="KyleThanas的分享">
+    <meta name="og:type" content="webpage">
+    <meta name="og:url" content="https://KyleThanas.github.io">
+    <meta name="og:title" content="KyleThanas知识分享">
+    <meta name="og:description" content="KyleThanas的分享">
     
-    <link rel="preload" href="/assets/css/0.styles.0e3e9199.css" as="style"><link rel="preload" href="/assets/js/app.a532b955.js" as="script"><link rel="preload" href="/assets/js/2.13e51145.js" as="script"><link rel="preload" href="/assets/js/36.9ffd96da.js" as="script"><link rel="prefetch" href="/assets/js/10.daf13000.js"><link rel="prefetch" href="/assets/js/100.fd4d8ac4.js"><link rel="prefetch" href="/assets/js/101.de232c8b.js"><link rel="prefetch" href="/assets/js/102.48975d91.js"><link rel="prefetch" href="/assets/js/103.0145b77e.js"><link rel="prefetch" href="/assets/js/104.f44230f1.js"><link rel="prefetch" href="/assets/js/105.b751ab90.js"><link rel="prefetch" href="/assets/js/106.48a38f24.js"><link rel="prefetch" href="/assets/js/11.8436a851.js"><link rel="prefetch" href="/assets/js/12.95ecfec6.js"><link rel="prefetch" href="/assets/js/13.77755a4d.js"><link rel="prefetch" href="/assets/js/14.e1d5111e.js"><link rel="prefetch" href="/assets/js/15.f535d6a4.js"><link rel="prefetch" href="/assets/js/16.7ebccb87.js"><link rel="prefetch" href="/assets/js/17.c7a92766.js"><link rel="prefetch" href="/assets/js/18.eca80e66.js"><link rel="prefetch" href="/assets/js/19.b73f8c3f.js"><link rel="prefetch" href="/assets/js/20.a1b940e0.js"><link rel="prefetch" href="/assets/js/21.d435da37.js"><link rel="prefetch" href="/assets/js/22.abef59a7.js"><link rel="prefetch" href="/assets/js/23.6df6a5b8.js"><link rel="prefetch" href="/assets/js/24.92bae193.js"><link rel="prefetch" href="/assets/js/25.2f9613eb.js"><link rel="prefetch" href="/assets/js/26.23e2ba28.js"><link rel="prefetch" href="/assets/js/27.7d77e0aa.js"><link rel="prefetch" href="/assets/js/28.47c502b6.js"><link rel="prefetch" href="/assets/js/29.77b2ad1f.js"><link rel="prefetch" href="/assets/js/3.8fcdfa19.js"><link rel="prefetch" href="/assets/js/30.0b7bae17.js"><link rel="prefetch" href="/assets/js/31.8017f82a.js"><link rel="prefetch" href="/assets/js/32.715e78c4.js"><link rel="prefetch" href="/assets/js/33.e030e00a.js"><link rel="prefetch" href="/assets/js/34.1699c708.js"><link rel="prefetch" href="/assets/js/35.4527a2b9.js"><link rel="prefetch" href="/assets/js/37.fa9fad17.js"><link rel="prefetch" href="/assets/js/38.da20faac.js"><link rel="prefetch" href="/assets/js/39.56af081b.js"><link rel="prefetch" href="/assets/js/4.8e3f20b2.js"><link rel="prefetch" href="/assets/js/40.200010ad.js"><link rel="prefetch" href="/assets/js/41.0bdb953f.js"><link rel="prefetch" href="/assets/js/42.1d9ce902.js"><link rel="prefetch" href="/assets/js/43.f2acf346.js"><link rel="prefetch" href="/assets/js/44.ac6c8bce.js"><link rel="prefetch" href="/assets/js/45.cf66d437.js"><link rel="prefetch" href="/assets/js/46.268b369b.js"><link rel="prefetch" href="/assets/js/47.92d24370.js"><link rel="prefetch" href="/assets/js/48.2d04e135.js"><link rel="prefetch" href="/assets/js/49.7b42fa48.js"><link rel="prefetch" href="/assets/js/5.4dcdb17c.js"><link rel="prefetch" href="/assets/js/50.a83aee6f.js"><link rel="prefetch" href="/assets/js/51.895a4bef.js"><link rel="prefetch" href="/assets/js/52.d9d5db01.js"><link rel="prefetch" href="/assets/js/53.1feb7024.js"><link rel="prefetch" href="/assets/js/54.6721d23c.js"><link rel="prefetch" href="/assets/js/55.ef15ae99.js"><link rel="prefetch" href="/assets/js/56.f255a38d.js"><link rel="prefetch" href="/assets/js/57.c3cf5320.js"><link rel="prefetch" href="/assets/js/58.40ed4607.js"><link rel="prefetch" href="/assets/js/59.fefbc600.js"><link rel="prefetch" href="/assets/js/6.2de70319.js"><link rel="prefetch" href="/assets/js/60.aa42fd56.js"><link rel="prefetch" href="/assets/js/61.830b557a.js"><link rel="prefetch" href="/assets/js/62.4329f2a8.js"><link rel="prefetch" href="/assets/js/63.ac4b6be0.js"><link rel="prefetch" href="/assets/js/64.327e2119.js"><link rel="prefetch" href="/assets/js/65.bcb1a973.js"><link rel="prefetch" href="/assets/js/66.aaa32979.js"><link rel="prefetch" href="/assets/js/67.372caea7.js"><link rel="prefetch" href="/assets/js/68.557ea937.js"><link rel="prefetch" href="/assets/js/69.695f9816.js"><link rel="prefetch" href="/assets/js/7.1f6742b4.js"><link rel="prefetch" href="/assets/js/70.15dd2d65.js"><link rel="prefetch" href="/assets/js/71.2a04d853.js"><link rel="prefetch" href="/assets/js/72.34f8f5da.js"><link rel="prefetch" href="/assets/js/73.37444825.js"><link rel="prefetch" href="/assets/js/74.8d70dcee.js"><link rel="prefetch" href="/assets/js/75.8ddb2da1.js"><link rel="prefetch" href="/assets/js/76.1beb24d3.js"><link rel="prefetch" href="/assets/js/77.6806f7a5.js"><link rel="prefetch" href="/assets/js/78.58ab4e80.js"><link rel="prefetch" href="/assets/js/79.9ae61aa4.js"><link rel="prefetch" href="/assets/js/8.73631b08.js"><link rel="prefetch" href="/assets/js/80.53dc2a8c.js"><link rel="prefetch" href="/assets/js/81.c5b0e71a.js"><link rel="prefetch" href="/assets/js/82.cc037d60.js"><link rel="prefetch" href="/assets/js/83.f9c1e9ed.js"><link rel="prefetch" href="/assets/js/84.580e61f8.js"><link rel="prefetch" href="/assets/js/85.499d0e54.js"><link rel="prefetch" href="/assets/js/86.b3d0422a.js"><link rel="prefetch" href="/assets/js/87.a430529d.js"><link rel="prefetch" href="/assets/js/88.de6d44e5.js"><link rel="prefetch" href="/assets/js/89.ec5fd1c3.js"><link rel="prefetch" href="/assets/js/9.40bb818e.js"><link rel="prefetch" href="/assets/js/90.5c8cc597.js"><link rel="prefetch" href="/assets/js/91.d5957837.js"><link rel="prefetch" href="/assets/js/92.6d492bf6.js"><link rel="prefetch" href="/assets/js/93.fb304792.js"><link rel="prefetch" href="/assets/js/94.bb87636a.js"><link rel="prefetch" href="/assets/js/95.a952ff43.js"><link rel="prefetch" href="/assets/js/96.2a7600f7.js"><link rel="prefetch" href="/assets/js/97.f1f061d4.js"><link rel="prefetch" href="/assets/js/98.e1652e10.js"><link rel="prefetch" href="/assets/js/99.3adde0b2.js">
-    <link rel="stylesheet" href="/assets/css/0.styles.0e3e9199.css">
+    <link rel="preload" href="/kyle/assets/css/0.styles.9abf4aa9.css" as="style"><link rel="preload" href="/kyle/assets/js/app.149d4505.js" as="script"><link rel="preload" href="/kyle/assets/js/2.131ca26b.js" as="script"><link rel="preload" href="/kyle/assets/js/56.73760a57.js" as="script"><link rel="prefetch" href="/kyle/assets/js/10.867bbde6.js"><link rel="prefetch" href="/kyle/assets/js/100.eefbd124.js"><link rel="prefetch" href="/kyle/assets/js/101.126733f6.js"><link rel="prefetch" href="/kyle/assets/js/102.cf2a1c37.js"><link rel="prefetch" href="/kyle/assets/js/103.61b5b7b0.js"><link rel="prefetch" href="/kyle/assets/js/104.a96e16f7.js"><link rel="prefetch" href="/kyle/assets/js/105.ce2950b9.js"><link rel="prefetch" href="/kyle/assets/js/106.e05cb601.js"><link rel="prefetch" href="/kyle/assets/js/107.dabe81de.js"><link rel="prefetch" href="/kyle/assets/js/108.b5fd2aa8.js"><link rel="prefetch" href="/kyle/assets/js/109.fa938e43.js"><link rel="prefetch" href="/kyle/assets/js/11.a71b27a2.js"><link rel="prefetch" href="/kyle/assets/js/110.fe446cb6.js"><link rel="prefetch" href="/kyle/assets/js/111.edef97db.js"><link rel="prefetch" href="/kyle/assets/js/112.31b6e4b5.js"><link rel="prefetch" href="/kyle/assets/js/113.590cb29f.js"><link rel="prefetch" href="/kyle/assets/js/114.9362cc27.js"><link rel="prefetch" href="/kyle/assets/js/115.bc14c385.js"><link rel="prefetch" href="/kyle/assets/js/116.3010b298.js"><link rel="prefetch" href="/kyle/assets/js/117.feab2456.js"><link rel="prefetch" href="/kyle/assets/js/118.6ee99aa9.js"><link rel="prefetch" href="/kyle/assets/js/119.662cf439.js"><link rel="prefetch" href="/kyle/assets/js/12.42f458b1.js"><link rel="prefetch" href="/kyle/assets/js/120.4f5d5c93.js"><link rel="prefetch" href="/kyle/assets/js/121.dad0f82e.js"><link rel="prefetch" href="/kyle/assets/js/122.e6537b2c.js"><link rel="prefetch" href="/kyle/assets/js/123.bff841a5.js"><link rel="prefetch" href="/kyle/assets/js/124.1dd18d24.js"><link rel="prefetch" href="/kyle/assets/js/125.649924d9.js"><link rel="prefetch" href="/kyle/assets/js/126.f6094dd1.js"><link rel="prefetch" href="/kyle/assets/js/127.85f949b2.js"><link rel="prefetch" href="/kyle/assets/js/128.7b1aaebf.js"><link rel="prefetch" href="/kyle/assets/js/129.d344bcc1.js"><link rel="prefetch" href="/kyle/assets/js/13.17bbecde.js"><link rel="prefetch" href="/kyle/assets/js/130.4b4bb1a9.js"><link rel="prefetch" href="/kyle/assets/js/131.81ade0fa.js"><link rel="prefetch" href="/kyle/assets/js/132.3210d899.js"><link rel="prefetch" href="/kyle/assets/js/133.4131636b.js"><link rel="prefetch" href="/kyle/assets/js/134.7f63e60b.js"><link rel="prefetch" href="/kyle/assets/js/135.87ac3923.js"><link rel="prefetch" href="/kyle/assets/js/136.1e3c3b8e.js"><link rel="prefetch" href="/kyle/assets/js/137.c88c0f9a.js"><link rel="prefetch" href="/kyle/assets/js/138.0bab0816.js"><link rel="prefetch" href="/kyle/assets/js/139.c3a029db.js"><link rel="prefetch" href="/kyle/assets/js/14.1d723dcb.js"><link rel="prefetch" href="/kyle/assets/js/140.37fe6341.js"><link rel="prefetch" href="/kyle/assets/js/141.eacfa34a.js"><link rel="prefetch" href="/kyle/assets/js/142.cf165b14.js"><link rel="prefetch" href="/kyle/assets/js/143.83fa9a91.js"><link rel="prefetch" href="/kyle/assets/js/144.4a3bbbf9.js"><link rel="prefetch" href="/kyle/assets/js/145.d647162d.js"><link rel="prefetch" href="/kyle/assets/js/146.0be3da80.js"><link rel="prefetch" href="/kyle/assets/js/147.76d74a85.js"><link rel="prefetch" href="/kyle/assets/js/148.e83d2bbe.js"><link rel="prefetch" href="/kyle/assets/js/149.f9b981a8.js"><link rel="prefetch" href="/kyle/assets/js/15.1ef8bb97.js"><link rel="prefetch" href="/kyle/assets/js/150.e3e1f00f.js"><link rel="prefetch" href="/kyle/assets/js/151.06ae3747.js"><link rel="prefetch" href="/kyle/assets/js/152.db7e2211.js"><link rel="prefetch" href="/kyle/assets/js/153.0d036b99.js"><link rel="prefetch" href="/kyle/assets/js/154.553b8893.js"><link rel="prefetch" href="/kyle/assets/js/155.531832aa.js"><link rel="prefetch" href="/kyle/assets/js/156.5b6085ee.js"><link rel="prefetch" href="/kyle/assets/js/157.f4adcbf9.js"><link rel="prefetch" href="/kyle/assets/js/158.b8ad01d9.js"><link rel="prefetch" href="/kyle/assets/js/159.1067daf0.js"><link rel="prefetch" href="/kyle/assets/js/16.284ff0c0.js"><link rel="prefetch" href="/kyle/assets/js/160.23a26c28.js"><link rel="prefetch" href="/kyle/assets/js/161.d6f47274.js"><link rel="prefetch" href="/kyle/assets/js/162.74f02de8.js"><link rel="prefetch" href="/kyle/assets/js/163.a8183a3a.js"><link rel="prefetch" href="/kyle/assets/js/164.740070f9.js"><link rel="prefetch" href="/kyle/assets/js/165.ee792d0d.js"><link rel="prefetch" href="/kyle/assets/js/166.7ad37b10.js"><link rel="prefetch" href="/kyle/assets/js/167.d78b9ec2.js"><link rel="prefetch" href="/kyle/assets/js/168.89bfaf7e.js"><link rel="prefetch" href="/kyle/assets/js/169.1eb28ea2.js"><link rel="prefetch" href="/kyle/assets/js/17.55fd3a62.js"><link rel="prefetch" href="/kyle/assets/js/170.a84d8c11.js"><link rel="prefetch" href="/kyle/assets/js/171.cf5ba8da.js"><link rel="prefetch" href="/kyle/assets/js/172.5191fe71.js"><link rel="prefetch" href="/kyle/assets/js/173.d08ada6a.js"><link rel="prefetch" href="/kyle/assets/js/174.39f0ebff.js"><link rel="prefetch" href="/kyle/assets/js/175.cf4c2167.js"><link rel="prefetch" href="/kyle/assets/js/18.a0a0165d.js"><link rel="prefetch" href="/kyle/assets/js/19.69023557.js"><link rel="prefetch" href="/kyle/assets/js/20.4b0b48b4.js"><link rel="prefetch" href="/kyle/assets/js/21.f7d66d35.js"><link rel="prefetch" href="/kyle/assets/js/22.236bac47.js"><link rel="prefetch" href="/kyle/assets/js/23.e4906c83.js"><link rel="prefetch" href="/kyle/assets/js/24.b9973bba.js"><link rel="prefetch" href="/kyle/assets/js/25.52217895.js"><link rel="prefetch" href="/kyle/assets/js/26.bb95dc65.js"><link rel="prefetch" href="/kyle/assets/js/27.2a2a6478.js"><link rel="prefetch" href="/kyle/assets/js/28.2ba1ad13.js"><link rel="prefetch" href="/kyle/assets/js/29.8bfd8a84.js"><link rel="prefetch" href="/kyle/assets/js/3.6688b7ea.js"><link rel="prefetch" href="/kyle/assets/js/30.73d3ba12.js"><link rel="prefetch" href="/kyle/assets/js/31.4cc3d37f.js"><link rel="prefetch" href="/kyle/assets/js/32.9df88df9.js"><link rel="prefetch" href="/kyle/assets/js/33.8fa5dd80.js"><link rel="prefetch" href="/kyle/assets/js/34.82d0bb54.js"><link rel="prefetch" href="/kyle/assets/js/35.089a9746.js"><link rel="prefetch" href="/kyle/assets/js/36.cc53158d.js"><link rel="prefetch" href="/kyle/assets/js/37.1525afb9.js"><link rel="prefetch" href="/kyle/assets/js/38.6d78beeb.js"><link rel="prefetch" href="/kyle/assets/js/39.aa4b33a7.js"><link rel="prefetch" href="/kyle/assets/js/4.d4f1e263.js"><link rel="prefetch" href="/kyle/assets/js/40.ee3bb190.js"><link rel="prefetch" href="/kyle/assets/js/41.20eb2653.js"><link rel="prefetch" href="/kyle/assets/js/42.b58e79a2.js"><link rel="prefetch" href="/kyle/assets/js/43.6a067ce4.js"><link rel="prefetch" href="/kyle/assets/js/44.3e52c03c.js"><link rel="prefetch" href="/kyle/assets/js/45.8f9b69d1.js"><link rel="prefetch" href="/kyle/assets/js/46.30e6bd3b.js"><link rel="prefetch" href="/kyle/assets/js/47.55f46471.js"><link rel="prefetch" href="/kyle/assets/js/48.6cc95224.js"><link rel="prefetch" href="/kyle/assets/js/49.4ea70692.js"><link rel="prefetch" href="/kyle/assets/js/5.e33aa6b5.js"><link rel="prefetch" href="/kyle/assets/js/50.57fe401d.js"><link rel="prefetch" href="/kyle/assets/js/51.fb85e9eb.js"><link rel="prefetch" href="/kyle/assets/js/52.09c1dc86.js"><link rel="prefetch" href="/kyle/assets/js/53.d2e5bdc2.js"><link rel="prefetch" href="/kyle/assets/js/54.002edcbe.js"><link rel="prefetch" href="/kyle/assets/js/55.79ec0b8f.js"><link rel="prefetch" href="/kyle/assets/js/57.e19e1b65.js"><link rel="prefetch" href="/kyle/assets/js/58.d67f14bd.js"><link rel="prefetch" href="/kyle/assets/js/59.9032481d.js"><link rel="prefetch" href="/kyle/assets/js/6.28b99fde.js"><link rel="prefetch" href="/kyle/assets/js/60.1b66f256.js"><link rel="prefetch" href="/kyle/assets/js/61.876df144.js"><link rel="prefetch" href="/kyle/assets/js/62.bef365a4.js"><link rel="prefetch" href="/kyle/assets/js/63.197db396.js"><link rel="prefetch" href="/kyle/assets/js/64.ee192023.js"><link rel="prefetch" href="/kyle/assets/js/65.47c6d178.js"><link rel="prefetch" href="/kyle/assets/js/66.7b13d6e5.js"><link rel="prefetch" href="/kyle/assets/js/67.cff1ef55.js"><link rel="prefetch" href="/kyle/assets/js/68.23c69b57.js"><link rel="prefetch" href="/kyle/assets/js/69.89973019.js"><link rel="prefetch" href="/kyle/assets/js/7.d5f85b9a.js"><link rel="prefetch" href="/kyle/assets/js/70.f72ea5cf.js"><link rel="prefetch" href="/kyle/assets/js/71.460c281f.js"><link rel="prefetch" href="/kyle/assets/js/72.085327b0.js"><link rel="prefetch" href="/kyle/assets/js/73.a55e0824.js"><link rel="prefetch" href="/kyle/assets/js/74.8d28d46a.js"><link rel="prefetch" href="/kyle/assets/js/75.eb02179b.js"><link rel="prefetch" href="/kyle/assets/js/76.6af9b8ec.js"><link rel="prefetch" href="/kyle/assets/js/77.bb790bc9.js"><link rel="prefetch" href="/kyle/assets/js/78.a5db1164.js"><link rel="prefetch" href="/kyle/assets/js/79.62fa2b64.js"><link rel="prefetch" href="/kyle/assets/js/8.327822b2.js"><link rel="prefetch" href="/kyle/assets/js/80.5586ab83.js"><link rel="prefetch" href="/kyle/assets/js/81.8c433aae.js"><link rel="prefetch" href="/kyle/assets/js/82.2c3b6ae2.js"><link rel="prefetch" href="/kyle/assets/js/83.9db22b73.js"><link rel="prefetch" href="/kyle/assets/js/84.a329f59a.js"><link rel="prefetch" href="/kyle/assets/js/85.3899ace7.js"><link rel="prefetch" href="/kyle/assets/js/86.e927fa29.js"><link rel="prefetch" href="/kyle/assets/js/87.02aed66c.js"><link rel="prefetch" href="/kyle/assets/js/88.356f91c3.js"><link rel="prefetch" href="/kyle/assets/js/89.d91618ca.js"><link rel="prefetch" href="/kyle/assets/js/9.8baab8bf.js"><link rel="prefetch" href="/kyle/assets/js/90.9cb1d97a.js"><link rel="prefetch" href="/kyle/assets/js/91.b255ca69.js"><link rel="prefetch" href="/kyle/assets/js/92.9727aa1b.js"><link rel="prefetch" href="/kyle/assets/js/93.54407c3e.js"><link rel="prefetch" href="/kyle/assets/js/94.879f307f.js"><link rel="prefetch" href="/kyle/assets/js/95.c5424bbf.js"><link rel="prefetch" href="/kyle/assets/js/96.74182c68.js"><link rel="prefetch" href="/kyle/assets/js/97.678f8315.js"><link rel="prefetch" href="/kyle/assets/js/98.359698db.js"><link rel="prefetch" href="/kyle/assets/js/99.216cf668.js">
+    <link rel="stylesheet" href="/kyle/assets/css/0.styles.9abf4aa9.css">
   </head>
   <body>
-    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">KyleThanas</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/kyle/" class="home-link router-link-active"><!----> <span class="site-name">KyleThanas</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/kyle/" class="nav-link">
   首页
-</a></div><div class="nav-item"><a href="https://support.qq.com/product/65891" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  吐槽
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+</a></div><div class="nav-item"><a href="weixin://dl/officialaccounts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微信
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/kyle/" class="nav-link">
   首页
-</a></div><div class="nav-item"><a href="https://support.qq.com/product/65891" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  吐槽
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>前端知识</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading open"><span>React</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/dz8c7t.html" class="sidebar-link">图片上传</a></li><li><a href="/gqmosx.html" class="sidebar-link">列表渲染</a></li><li><a href="/rtgslb.html" class="sidebar-link">CustomEvent</a></li><li><a href="/lqnqs2.html" class="sidebar-link">恢复高度</a></li><li><a href="/qa56hz.html" class="sidebar-link">React v16 的生命周期</a></li><li><a href="/hipyvh.html" class="active sidebar-link">页面间传值</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/hipyvh.html#父传子" class="sidebar-link">父传子</a></li><li class="sidebar-sub-header"><a href="/hipyvh.html#子传父-不带参数" class="sidebar-link">子传父--不带参数</a></li><li class="sidebar-sub-header"><a href="/hipyvh.html#子传父-带参数" class="sidebar-link">子传父--带参数</a></li><li class="sidebar-sub-header"><a href="/hipyvh.html#中间件" class="sidebar-link">中间件</a></li></ul></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>包管理工具</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/rg3apf.html" class="sidebar-link">cnpm</a></li><li><a href="/kz5ien.html" class="sidebar-link">yum命令详解</a></li><li><a href="/fkrp70.html" class="sidebar-link">yarn使用</a></li><li><a href="/xafy8c.html" class="sidebar-link">npm</a></li><li><a href="/efpshd.html" class="sidebar-link">nvm给服务器安装node</a></li><li><a href="/fg9nxv.html" class="sidebar-link">nrm来切换npm源</a></li><li><a href="/nn5kpo.html" class="sidebar-link">wget</a></li><li><a href="/yze60n.html" class="sidebar-link">homebrew</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>CentOS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/okel38.html" class="sidebar-link">sftp上传、下载文件</a></li><li><a href="/ehkgmt.html" class="sidebar-link">环境配置-mysql</a></li><li><a href="/mwi0hx.html" class="sidebar-link">防火墙-firewalld</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>Git</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zv1n2e.html" class="sidebar-link">git config 设置</a></li><li><a href="/nstgdi.html" class="sidebar-link">git常用命令，及.gitignore的配置</a></li><li><a href="/riwyud.html" class="sidebar-link">git push</a></li><li><a href="/agvglc.html" class="sidebar-link">git branch</a></li><li><a href="/vwg967.html" class="sidebar-link">git stash(暂存机制)</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>微信小程序</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/muvdeb.html" class="sidebar-link">生命周期</a></li><li><a href="/fyncmu.html" class="sidebar-link">页面间传值</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>TypeScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group is-sub-group depth-2"><p class="sidebar-heading open"><span>2019--自学</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/cqbaxh.html" class="sidebar-link">typescript（一）-- 概述</a></li><li><a href="/ybzci8.html" class="sidebar-link">typescript（二）-- 基础类型</a></li><li><a href="/ab0g2p.html" class="sidebar-link">typescript（三）-- 高级类型</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-2"><p class="sidebar-heading"><span>2020--掘金小册子</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/st25ew.html" class="sidebar-link">简介</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-2"><p class="sidebar-heading"><span>Css</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ixgreg.html" class="sidebar-link">CSS巧计</a></li><li><a href="/dgzi3b.html" class="sidebar-link">CSS优雅</a></li><li><a href="/cquds0.html" class="sidebar-link">CSS书写</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-2"><p class="sidebar-heading"><span>js代码优化</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bno2ak.html" class="sidebar-link">map简写</a></li><li><a href="/vgr7ir.html" class="sidebar-link">多次异步</a></li><li><a href="/bmmy2d.html" class="sidebar-link">js轮询</a></li></ul></section></li><li><a href="/xq7t8s.html" class="sidebar-link">好用的全局包</a></li><li><a href="/ya1due.html" class="sidebar-link">退出页面</a></li><li><a href="/qe0hfx.html" class="sidebar-link">前端宝石💎for...of</a></li><li><a href="/ygn2l2.html" class="sidebar-link">比较版本号</a></li><li><a href="/lowv8u.html" class="sidebar-link">ignore</a></li><li><a href="/ix6hg3.html" class="sidebar-link">数据格式化</a></li><li><a href="/nk4m5g.html" class="sidebar-link">curl命令</a></li><li><a href="/lb6zw4.html" class="sidebar-link">条件判断</a></li><li><a href="/saanpc.html" class="sidebar-link">少见问题</a></li><li><a href="/oibqpy.html" class="sidebar-link">添加随机码</a></li><li><a href="/ngb45u.html" class="sidebar-link">ES7、ES8、ES9、ES10</a></li><li><a href="/qago0e.html" class="sidebar-link">解构</a></li><li><a href="/el849f.html" class="sidebar-link">闭包&amp;内存泄漏</a></li><li><a href="/es3vml.html" class="sidebar-link">Angular</a></li><li><a href="/cm9fdg.html" class="sidebar-link">this指向</a></li><li><a href="/tpgpg0.html" class="sidebar-link">原型链</a></li><li><a href="/fzqecq.html" class="sidebar-link">渐进式Web应用程序（PWA）</a></li><li><a href="/lq3gzm.html" class="sidebar-link">页面渲染性能优化</a></li><li><a href="/ofmc9g.html" class="sidebar-link">js微任务和宏任务</a></li><li><a href="/zy95lc.html" class="sidebar-link">FileReader总结</a></li><li><a href="/xi1ukg.html" class="sidebar-link">sendBeacon统计数据</a></li><li><a href="/dd4f3r.html" class="sidebar-link">Promise总结</a></li><li><a href="/vouxdc.html" class="sidebar-link">Fetch总结</a></li><li><a href="/bf3n8q.html" class="sidebar-link">async/await总结</a></li><li><a href="/pil8ix.html" class="sidebar-link">有趣js</a></li><li><a href="/stcvxp.html" class="sidebar-link">Web Components总结</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>关于工具·开发</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/myrc71.html" class="sidebar-link">vscode好用插件</a></li><li><a href="/kwlnto.html" class="sidebar-link">.zshrc 修改</a></li><li><a href="/gpfmrm.html" class="sidebar-link">项目约定</a></li><li><a href="/hv33bt.html" class="sidebar-link">Markdown使用实例</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>实用技术</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/sgw1b4.html" class="sidebar-link">eruda调试神器</a></li><li><a href="/kvw1y2.html" class="sidebar-link">doc转markdown</a></li><li><a href="/onog0m.html" class="sidebar-link">图片水印</a></li><li><a href="/ccln9z.html" class="sidebar-link">url 解析和取参</a></li><li><a href="/tquxyp.html" class="sidebar-link">微信公众平台图文消息的链接组成</a></li><li><a href="/roxct7.html" class="sidebar-link">前端业务错误码</a></li><li><a href="/hg6twf.html" class="sidebar-link">地图画区</a></li><li><a href="/ihd3eq.html" class="sidebar-link">MEGA7使用</a></li><li><a href="/gkcrxd.html" class="sidebar-link">chrome打开微信h5页面</a></li><li><a href="/evnxrm.html" class="sidebar-link">视频播放--自动播放</a></li><li><a href="/rkc1dh.html" class="sidebar-link">视频播放--全屏处理</a></li><li><a href="/qcfngw.html" class="sidebar-link">js编码解码</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>读书</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group is-sub-group depth-2"><p class="sidebar-heading open"><span>HTTP／2基础教程</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/wlych6.html" class="sidebar-link">Web性能的最佳实践</a></li><li><a href="/glzmk3.html" class="sidebar-link">Web响应--关键性能指标</a></li><li><a href="/owi0qq.html" class="sidebar-link">Web响应--优化--HTTP/2</a></li><li><a href="/vwhq00.html" class="sidebar-link">Web响应--优化--服务端推送</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-2"><p class="sidebar-heading"><span>《精通css》第三版</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/gi59fg.html" class="sidebar-link">第一天</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-2"><p class="sidebar-heading"><span>杂学</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group is-sub-group depth-3"><p class="sidebar-heading open"><span>理财</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/gr4wqs.html" class="sidebar-link">风险等级</a></li><li><a href="/dtewcf.html" class="sidebar-link">投资顺序</a></li><li><a href="/gxzczh.html" class="sidebar-link">余额宝是个分水岭</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-3"><p class="sidebar-heading"><span>给老婆的教程</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vd51ii.html" class="sidebar-link">u盘、硬盘问题</a></li><li><a href="/csl7ou.html" class="sidebar-link">ssTap</a></li><li><a href="/bik7u7.html" class="sidebar-link">查看密码</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-3"><p class="sidebar-heading"><span>哲理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/hyvqi3.html" class="sidebar-link">人生</a></li><li><a href="/phbr3v.html" class="sidebar-link">编程</a></li><li><a href="/quy23w.html" class="sidebar-link">职场</a></li><li><a href="/apg82h.html" class="sidebar-link">知乎精选</a></li><li><a href="/zrqivm.html" class="sidebar-link">拼搏的意义</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-3"><p class="sidebar-heading"><span>Excel</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/lnadeg.html" class="sidebar-link">更改日期</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-3"><p class="sidebar-heading"><span>装修</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/yzgdkq.html" class="sidebar-link">家装注意事项</a></li><li><a href="/cvv7ox.html" class="sidebar-link">地板or瓷砖</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-3"><p class="sidebar-heading"><span>茶叶</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/nvd0og.html" class="sidebar-link">茶叶的分类</a></li><li><a href="/vy7e6o.html" class="sidebar-link">合适的茶叶与注意事项</a></li><li><a href="/usxmag.html" class="sidebar-link">区分茶叶的好坏</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-3"><p class="sidebar-heading"><span>红葡萄酒</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/oqz9zt.html" class="sidebar-link">红酒和葡萄酒有什么区别</a></li><li><a href="/opxkta.html" class="sidebar-link">葡萄酒陈年</a></li><li><a href="/fiiet7.html" class="sidebar-link">单宁简介</a></li></ul></section></li></ul></section></li></ul></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="页面间传值"><a href="#页面间传值" class="header-anchor">#</a> 页面间传值</h1> <div data-lake-element="root" data-selection-124615="%7B%22path%22%3A%5B%5B26%2C0%2C1%2C0%5D%2C%5B26%2C0%2C1%2C2%5D%5D%2C%22uuid%22%3A%22124615%22%2C%22active%22%3Atrue%7D" class="lake-content-editor-core lake-engine"><h2 id="父传子"><a href="#父传子" class="header-anchor">#</a> 父传子</h2> <p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><br></p><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><strong>使用props传值：</strong><strong>子组件通过this.props进行接收就可以了</strong></p><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><br></p><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;">父组件</p><div data-card-type="block" data-lake-card="codeblock" id="NOQJ8"><div class="lake-codeblock-content" style="border:1px solid rgb(232, 232, 232);max-width:750px;color:rgb(38, 38, 38);margin:0px;padding:0px;background:rgb(249, 249, 249);"><div style="color:rgb(89, 89, 89);margin:0px;padding:16px;background:none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><div class="language-undefined extra-class"><pre class="language-text"><code>import { PureComponent, Fragment } from 'react'
-import DocumentTitle from 'react-document-title'
-import router from 'umi/router'
-import styled from 'styled-components'
-import withStyled from '@@/styles/withStyled'
-import MineList from '../widgets/MineList' // 子组件
-
-const MineInfo = withStyled(styled.div`
- position: relative;
- z-index: 10;
- margin: -20px 0 0;
- padding: 20px 20px 0;
- width: 100%;
-   // backgroundColor是withStyled里面的变量
- background-color: ${(props) =&gt; props.theme.backgroundColor}; 
- border-radius: 20px 20px 0 0;
-`)
-
-const list = [
- {
-   icon: iconPlay,
-   title: '我的课程',
-   rightIcon: iconRight,
-   onClick: () =&gt; router.replace({ pathname: '/lesson' })
- },
- {
-   icon: iconLogo,
-   title: '关于小帮',
-   rightIcon: iconRight,
-   onClick: () =&gt; router.push({ pathname: '/document/about' })
- }
-]
-
-class MinePage extends PureComponent {
- constructor(props) {
-   super(props)
- }
-
- render() {
-   const { account: { account = {} } } = this.props
-   return (
-     &lt;documenttitle title=&quot;我的&quot;&gt;
-       &lt;fragment&gt;
-         &lt;mineinfo&gt;
-           {list.map((item, index) =&gt; (
-             // {...item} 向子组件传递参数
-             // {...item} 向子组件传递参数
-             // {...item} 向子组件传递参数
-             &lt;minelist {...item} key=&quot;{index}&quot;&gt; // 子组件 
-           ))}
-         &lt;/minelist&gt;&lt;/mineinfo&gt;
-       &lt;/fragment&gt;
-     &lt;/documenttitle&gt;
-   )
- }
-}
-export default MinePage 
-</code></pre></div></div></div></div><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><br></p><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;">子<span>组件</span></p><div data-card-type="block" data-lake-card="codeblock" id="tBX6O"><div class="lake-codeblock-content" style="border:1px solid rgb(232, 232, 232);max-width:750px;color:rgb(38, 38, 38);margin:0px;padding:0px;background:rgb(249, 249, 249);"><div style="color:rgb(89, 89, 89);margin:0px;padding:16px;background:none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><div class="language-undefined extra-class"><pre class="language-text"><code>import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import withStyled from '@@/styles/withStyled'
-
-const Container = withStyled(styled.div`
- width: 100%;
- height: 76px;
- display: flex;
- align-items: center;
- img:nth-of-type(1) {
-   width: 28px;
-   height: 28px;
-   margin: 0 16px 0 0;
- }
- span {
-   flex: 1;
- }
- img:nth-of-type(2) {
-   width: 20px;
-   height: 20px;
- }
-`)
-
-const MineList = ({ title, icon, rightIcon, onClick }) =&gt; {
- return (
-   &lt;container onclick=&quot;{onClick}&quot;&gt;
-     &lt;img src=&quot;{icon}&quot;&gt;
-     &lt;span&gt;{title}&lt;/span&gt;
-     &lt;img src=&quot;{rightIcon}&quot;&gt;
-   &lt;/container&gt;
- )
-}
-
-MineList.propTypes = {
- title: PropTypes.string.isRequired,
- icon: PropTypes.string.isRequired,
- rightIcon: PropTypes.string.isRequired,
- onClick: PropTypes.func
-}
-
-export default MineList 
-</code></pre></div></div></div></div><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><br></p> <h2 id="子传父-不带参数"><a href="#子传父-不带参数" class="header-anchor">#</a> 子传父--不带参数</h2> <p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><br></p><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><strong>子组件向父组件传值需要绑定一个事件，然后事件是父组件传递过来的this.props.event来进行值的更替</strong></p><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><strong><br></strong></p><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;">父<span>组件</span></p><div data-card-type="block" data-lake-card="codeblock" id="0yI77"><div class="lake-codeblock-content" style="border:1px solid rgb(232, 232, 232);max-width:750px;color:rgb(38, 38, 38);margin:0px;padding:0px;background:rgb(249, 249, 249);"><div style="color:rgb(89, 89, 89);margin:0px;padding:16px;background:none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><div class="language-undefined extra-class"><pre class="language-text"><code>import { PureComponent } from 'react'
-import router from 'umi/router'
-import PropTypes from 'prop-types'
-import styled, { createGlobalStyle } from 'styled-components'
-import withStyled from '@@/styles/withStyled'
-import GlobalModalRich from '@@/components/Modal/Rich'
-import FeedBack from '../FeedBack' // 子组件
-
-const NavbarPaddingSafe = createGlobalStyle`
- #app {
-   padding-bottom: 49px;
- }
-`
-
-const NavbarContainer = withStyled(styled.div`
- position: fixed;
- left: 0;
- right: 0;
- bottom: 0;
- margin: 0 auto;
- width: 100%;
- height: auto;
- max-width: ${(props) =&gt; props.theme.maxWidth};
- box-shadow: 0 -6px 12px 0 rgba(0, 0, 0, 0.04);
- background-color: #ffffff;
-`)
-
-const NavbarGroup = withStyled(styled.div`
- display: flex;
- align-items: center;
- padding: 7px 0 6px;
-`)
-
-const NavbarButton = withStyled(styled.div`
- flex: 25;
- padding: 22px 0 0;
- font-size: 10px;
- line-height: 14px;
- color: ${(props) =&gt; props.theme.font400};
- text-align: center;
- background-size: 20px 20px;
- background-repeat: no-repeat;
- background-position: top center;
- background-image: url(${(props) =&gt; props.image});
-`)
-
-class ResourceNavbarButton extends PureComponent {
- constructor(props) {
-   super(props)
-   // uniqueId、feedbackStatus是父组件传递进来的值
-   const { uniqueId, feedbackStatus } = this.props
-   this.uniqueId = uniqueId
-   this.state = {
-     feedbackStatus: feedbackStatus
-   }
- }
-
- componentWillUnmount() {
-   GlobalModalRich.hide()
- }
-
- action = {
-   handleShowFeedback: () =&gt; {
-     const feedback = {
-       title: '评价本节',
-       // 调用子组件
-       // handleConfirm接收子组件的事件或参数
-       // handleConfirm接收子组件的事件或参数
-       // handleConfirm接收子组件的事件或参数
-       children: &lt;feedback uniqueid=&quot;{this.uniqueId}&quot; handleconfirm=&quot;{()&quot; =&gt; { this.action.handleFeedback() }} /&gt;,
-       onClick: GlobalModalRich.hide
-     }
-     GlobalModalRich.show(feedback)
-   },
-   // 接收到子组件到事件或状态后，触发到事件
-   // 接收到子组件到事件或状态后，触发到事件
-   // 接收到子组件到事件或状态后，触发到事件
-   handleFeedback: () =&gt; {
-     this.setState({ feedbackStatus: true })
-     this.props.handleConfirm()
-   }
- }
-
- render() {
-   const { feedbackStatus } = this.state
-   const { noteListStatus } = this.props
-   return (
-     &lt;navbarcontainer classname=&quot;ios-padding-safe&quot;&gt;
-       &lt;navbarpaddingsafe&gt;
-       &lt;navbargroup&gt;
-         &lt;navbarbutton image=&quot;{iconFeedback}&quot; onclick=&quot;{()&quot; =&gt; this.action.handleShowFeedback()}&gt;
-           &lt;span&gt;评价本节&lt;/span&gt;
-         &lt;/navbarbutton&gt;
-       &lt;/navbargroup&gt;
-     &lt;/navbarpaddingsafe&gt;&lt;/navbarcontainer&gt;
-   )
- }
-}
-
-ResourceNavbarButton.propTypes = {
- uniqueId: PropTypes.string.isRequired,
- feedbackStatus: PropTypes.bool.isRequired,
- noteListStatus: PropTypes.bool.isRequired
-}
-
-export default ResourceNavbarButton 
-</code></pre></div><p></p></div></div></div><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><br></p><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;">子<span>组件</span></p><div data-card-type="block" data-lake-card="codeblock" id="WjLn5"><div class="lake-codeblock-content" style="border:1px solid rgb(232, 232, 232);max-width:750px;color:rgb(38, 38, 38);margin:0px;padding:0px;background:rgb(249, 249, 249);"><div style="color:rgb(89, 89, 89);margin:0px;padding:16px;background:none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><p></p> <div class="language-undefined extra-class"><pre class="language-text"><code>import { PureComponent } from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import classnames from 'classnames'
-import withStyled from '@@/styles/withStyled'
-import resourceService from '@@/services/resource'
-import GlobalModalRich from '@@/components/Modal/Rich'
-
-import iconBad from './icon-bad.png'
-import iconBadChecked from './icon-bad-checked.png'
-import iconGood from './icon-good.png'
-import iconGoodChecked from './icon-good-checked.png'
-import iconSimple from './icon-simple.png'
-import iconSimpleChecked from './icon-simple-checked.png'
-
-const Container = withStyled(styled.div`
- display: flex;
- align-items: center;
- justify-content: center;
-`)
-
-const Item = withStyled(styled.div`
- flex: 1;
- font-size: 14PX;
- display: flex;
- flex-direction: column;
- align-items: center;
- color: ${(props) =&gt; props.theme.font100};
- padding: 28px 0 0;
- background-size: 24px 24px;
- background-repeat: no-repeat;
- background-position: top center;
- span {
-   font-size: 10PX;
-   color: ${(props) =&gt; props.theme.font400};
- }
- &amp;.focus {
-   span {
-     color: #FFC300;
-   }
- }
- &amp;.bad {
-   background-image: url(${iconBad});
-   &amp;.focus {
-     background-image: url(${iconBadChecked});
-   }
- }
- &amp;.good {
-   background-image: url(${iconGood});
-   &amp;.focus {
-     background-image: url(${iconGoodChecked});
-   }
- }
- &amp;.simple {
-   background-image: url(${iconSimple});
-   &amp;.focus {
-     background-image: url(${iconSimpleChecked});
-   }
- }
-`)
-
-class FeedBack extends PureComponent {
- constructor(props) {
-   super(props)
-   this.state = {
-     checkedValue: ''
-   }
- }
-
- action = {
-   handleFetch: async (type, name) =&gt; {
-     const { checkedValue } = this.state
-     if (checkedValue) {
-       return false
-     }
-
-     const { uniqueId } = this.props
-     this.setState({
-       checkedValue: name
-     })
-
-     try {
-       await resourceService.feedback(uniqueId, { feedBackType: type })
-     } catch (error) {
-       console.warn(error.message)
-     } finally {
-       setTimeout(GlobalModalRich.hide, 500)
-       // 向父组件发送事件，也可以传递参数
-       // 向父组件发送事件，也可以传递参数
-       // 向父组件发送事件，也可以传递参数
-       this.props.handleConfirm()
-     }
-   }
- }
-
- render() {
-   const { checkedValue } = this.state
-   const badClassName = classnames('bad', { focus: checkedValue === 'bad' })
-   const goodClassName = classnames('good', { focus: checkedValue === 'good' })
-   const simpleClassName = classnames('simple', { focus: checkedValue === 'simple' })
-   return (
-     &lt;container&gt;
-       &lt;item classname=&quot;{badClassName}&quot; onclick=&quot;{()&quot; =&gt; this.action.handleFetch(1, 'bad')}&gt;
-         &lt;span&gt;没听懂&lt;/span&gt;
-       &lt;/item&gt;
-       &lt;item classname=&quot;{goodClassName}&quot; onclick=&quot;{()&quot; =&gt; this.action.handleFetch(2, 'good')}&gt;
-         &lt;span&gt;有收获&lt;/span&gt;
-       &lt;/item&gt;
-       &lt;item classname=&quot;{simpleClassName}&quot; onclick=&quot;{()&quot; =&gt; this.action.handleFetch(0, 'simple')}&gt;
-         &lt;span&gt;太简单&lt;/span&gt;
-       &lt;/item&gt;
-     &lt;/container&gt;
-   )
- }
-}
-
-FeedBack.propTypes = {
- uniqueId: PropTypes.string.isRequired
-}
-
-export default FeedBack 
-</code></pre></div></div></div></div><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><br></p> <h2 id="子传父-带参数"><a href="#子传父-带参数" class="header-anchor">#</a> 子传父--带参数</h2> <p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><br></p><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;">父<span>组件</span></p><div data-card-type="block" data-lake-card="codeblock" id="YN8NJ"><div class="lake-codeblock-content" style="border:1px solid rgb(232, 232, 232);max-width:750px;color:rgb(38, 38, 38);margin:0px;padding:0px;background:rgb(249, 249, 249);"><div style="color:rgb(89, 89, 89);margin:0px;padding:16px;background:none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><div class="language-undefined extra-class"><pre class="language-text"><code>import { PureComponent, Fragment } from 'react'
-import DocumentTitle from 'react-document-title'
-import ExerciseCard from '../widgets/ExerciseCard'
-
-class DetailPage extends PureComponent {
-   constructor(props) {
-   super(props)
- }
- 
- action = {
-   handleChangeDate: (exerciseId, type, value) =&gt; {
-     console.log(exerciseId, type, value)// 获取子组件传递过来的值
-   },
- }
- 
- render(){
-   return (
-     &lt;documenttitle title=&quot;{title}&quot;&gt;
-       &lt;fragment&gt;
-         {exerciseList.map(item =&gt; (
-           &lt;exercisecard {...item} isfinished=&quot;{isFinished}&quot; handlechangedate=&quot;{(exerciseId,&quot; type, value)&gt; this.action.handleChangeDate(exerciseId, type, value)}
-             key={item.rowKey}
-             /&gt;
-         ))}
-       &lt;/exercisecard&gt;&lt;/fragment&gt;
-     &lt;/documenttitle&gt;
-   )
- }
-} 
-</code></pre></div></div></div></div><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><br></p><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;">子组件</p><div data-card-type="block" data-lake-card="codeblock" id="Zo1XN" class="lake-activated"><div class="lake-codeblock-content" style="border:1px solid rgb(232, 232, 232);max-width:750px;color:rgb(38, 38, 38);margin:0px;padding:0px;background:rgb(249, 249, 249);"><div style="color:rgb(89, 89, 89);margin:0px;padding:16px;background:none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><div class="language-undefined extra-class"><pre class="language-text"><code>import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import withStyled from '@@/styles/withStyled'
-import classnames from 'classnames'
-
-import iconRadio from './icon-radio.png'
-import iconRadioCorrect from './icon-radio-correct.png'
-import iconCheckout from './icon-checkout.png'
-import iconCheckoutCorrect from './icon-checkout-correct.png'
-import iconCorrect from './icon-correct.png'
-import iconWrong from './icon-wrong.png'
-
-const Container = withStyled(styled.div`
- position: relative;
- padding: 16px 0 8px;
- width: 100%;
-`)
-
-const Result = withStyled(styled.img`
- position: absolute;
- top: 0;
- right: 0;
- width: 72px;
- height: 72px;
-`)
-
-const Order = withStyled(styled.div`
- height: 20px;
- font-size: 16px;
- font-weight: bold;
- color: ${props =&gt; props.theme.font100};
- line-height: 20px;
-`)
-
-const Title = withStyled(styled.div`
- margin: 8px 0 4px;
- font-size: 16px;
- text-align: justify;
- text-align-last: left;
- line-height: 24px;
- color: ${props =&gt; props.theme.font100};
-`)
-
-const Answer = withStyled(styled.div`
- position: relative;
- display: flex;
- align-items: center;
- margin: 0 0 8px;
- padding: 0 0 0 40px;
- height: 41px;
- background-color: #f5f7fa;
- border-radius: 8px;
- &amp;:before {
-   position: absolute;
-   left: 12px;
-   top: 50%;
-   transform: translateY(-50%);
-   display: inline-block;
-   content: '';
-   width: 20px;
-   height: 20px;
-   background: url(${props =&gt; props.icon});
-   background-repeat: no-repeat;
-   background-size: cover;
- }
- &amp;:last-of-type {
-   margin: 0 0 24px;
- }
- &amp;.selected {
-   background-color: rgba(255, 221, 0, 0.1);
- }
-`)
-
-const Analysis = withStyled(styled.div`
- margin: 0 0 40px;
- padding: 16px 12px;
- background-color: #e5e9f2;
- border-radius: 8px;
- border: 1px solid rgba(229, 233, 242, 1);
-`)
-
-const CorrectAnswer = withStyled(styled.div`
- font-size: 14px;
- line-height: 18px;
- color: ${props =&gt; props.theme.font100};
-`)
-
-const AnswerAnalysis = withStyled(styled.div`
- margin: 4px 0 0;
- font-size: 14px;
- line-height: 22px;
- color: ${props =&gt; props.theme.font100};
-`)
-
-const judgeResult = status =&gt; {
- switch (+status) {
-   case 0:
-     return ''
-   case 1:
-     return iconCorrect
-   case 2:
-     return iconWrong
-   default:
-     return ''
- }
-}
-
-const judgeType = type =&gt; {
- if (type === 0) {
-   const typeDescription = '单选题'
-   const iconType = iconRadio
-   const iconSelect = iconRadioCorrect
-   return { typeDescription, iconType, iconSelect }
- } else if (type === 1) {
-   const typeDescription = '多选题'
-   const iconType = iconCheckout
-   const iconSelect = iconCheckoutCorrect
-   return { typeDescription, iconType, iconSelect }
- }
-}
-
-const judgeLabel = index =&gt; {
- return String.fromCharCode(65 + index)
-}
-
-const ExerciseCard = ({ isFinished, exerciseId, title, type, status, content, options, analysis, handleChangeDate }) =&gt; {
- const iconResult = judgeResult(status)
- const { typeDescription, iconType, iconSelect } = judgeType(type)
- let rightResult = ''
-
- return (
-   &lt;container&gt;
-     {iconResult &amp;&amp; &lt;result src=&quot;{iconResult}&quot;&gt;}
-     &lt;order&gt;
-       {title}【{typeDescription}】
-     &lt;/order&gt;
-     &lt;title&gt;{content}&lt;/title&gt;
-     &lt;div&gt;
-       {options.map((item, index) =&gt; {
-         const { content, isUserAnswer, isCorrect } = item
-         const label = judgeLabel(index)
-         if (isCorrect) {
-           rightResult += label
-         }
-         const changeResult = isFinished ? () =&gt; { } : () =&gt; handleChangeDate(exerciseId, type, index)
-         const icon = isUserAnswer ? iconSelect : iconType
-         return (
-           &lt;answer classname=&quot;{classnames({&quot; selected: isuseranswer })} icon=&quot;{icon}&quot; onclick=&quot;{changeResult}&quot; key=&quot;{index}&quot;&gt;
-             {label}.{content}
-           &lt;/answer&gt;
-         )
-       })}
-     &lt;/div&gt;
-     {isFinished &amp;&amp; (
-       &lt;analysis&gt;
-         &lt;correctanswer&gt;正确答案：{rightResult}&lt;/correctanswer&gt;
-         &lt;answeranalysis&gt;解析：{analysis}&lt;/answeranalysis&gt;
-       &lt;/analysis&gt;
-     )}
-   &lt;/result&gt;&lt;/container&gt;
- )
-}
-
-ExerciseCard.propTypes = {
- isFinished: PropTypes.bool,
- exerciseId: PropTypes.number,
- title: PropTypes.string,
- type: PropTypes.number,
- status: PropTypes.number,
- content: PropTypes.string,
- options: PropTypes.array,
- analysis: PropTypes.string,
- handleChangeDate: PropTypes.func,
-}
-
-export default ExerciseCard 
-</code></pre></div></div></div></div><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><br></p><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><br></p> <h2 id="中间件"><a href="#中间件" class="header-anchor">#</a> 中间件</h2> <p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><br></p><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;">withStyled.js--基础颜色组件</p><div data-card-type="block" data-lake-card="codeblock" id="AhqtE"><div class="lake-codeblock-content" style="border:1px solid rgb(232, 232, 232);max-width:750px;color:rgb(38, 38, 38);margin:0px;padding:0px;background:rgb(249, 249, 249);"><div style="color:rgb(89, 89, 89);margin:0px;padding:16px;background:none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><div class="language-undefined extra-class"><pre class="language-text"><code>import { forwardRef } from 'react'
-import { ThemeProvider, keyframes } from 'styled-components'
-
-export const theme = {
- // 基础颜色
- primaryColor: 'rgba(255, 221, 0, 1)',
- secondaryColor: 'rgba(255, 196, 1, 1)',
- linkColor: 'rgba(24, 170, 242, 1)',
- borderColor: 'rgba(229, 233, 242, 1)',
- backgroundColor: 'rgba(245, 247, 250, 1)',
- maskColor: 'rgba(0, 0, 0, 0.5)',
- shadowColor: 'rgba(200, 200, 200, 0.05)',
- highLightColor: 'rgba(34, 34, 34, 1);',
- // 基金相关
- increaseColor: '#FC4447',
- decreaseColor: '#3CC86B',
- // 层级
- maskZindex: 100,
- popupZindex: 200,
- dialogZindex: 300,
- // 字体颜色
- font100: '#324057',
- font200: '#475669',
- font300: '#5E6D82',
- font400: '#8492A6',
- font500: '#99A9BF',
- font600: '#C0CCDA',
- importantfont: '#FF8026',
- // 宽度
- maxWidth: '480PX',
- // 加载器
- loaderPrimaryColor: 'rgba(239, 242, 247, 1)',
- loaderSecondaryColor: 'rgba(239, 242, 247, 0.6)'
-}
-
-export const autofill = keyframes`
- from {
-   background - color: transparent;
- }
- to {
-   background - color: transparent;
- }
-`
-
-export const popupCenter = keyframes`
- 0% {
-   transform: translateY(-50%) scale(0.8);
- }
- 100% {
-   transform: translateY(-50%) scale(1);
- }
-`
-
-export const riseNavbar = keyframes`
- 0% {
-   bottom: -64px;
- }
- 100% {
-   bottom: 0;
- }
-`
-
-const withStyled = (Component) =&gt; {
- const StyledComponent = (props, ref) =&gt; (
-   &lt;themeprovider theme=&quot;{theme}&quot;&gt;
-     &lt;component ref=&quot;{ref}&quot; {...props}&gt;
-   &lt;/component&gt;&lt;/themeprovider&gt;
- )
-
- return forwardRef(StyledComponent)
-}
-
-export default withStyled 
-</code></pre></div></div></div></div><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><br></p><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;">GlobalModalRich.js--模态框组件</p><div data-card-type="block" data-lake-card="codeblock" id="WOZls"><div class="lake-codeblock-content" style="border:1px solid rgb(232, 232, 232);max-width:750px;color:rgb(38, 38, 38);margin:0px;padding:0px;background:rgb(249, 249, 249);"><div style="color:rgb(89, 89, 89);margin:0px;padding:16px;background:none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><div class="language-undefined extra-class"><pre class="language-text"><code>import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import withStyled from '@@/styles/withStyled'
-import { MountPoint } from '@@/utils/dom'
-import iconClose from '@@/assets/icons/icon-close.png'
-
-const MaskBasic = withStyled(styled.div`
- position: fixed;
- left: 0;
- right: 0;
- top: 0;
- bottom: 0;
- background-color: ${(props) =&gt; props.theme.maskColor};
- z-index: ${(props) =&gt; props.theme.maskZindex};
-`)
-
-const MaskCenter = withStyled(styled.div`
- position: absolute;
- left: 0;
- right: 0;
- top: 45%;
- transform: translateY(-50%);
- padding: 20px;
- text-align: center;
- z-index: ${(props) =&gt; props.theme.dialogZindex};
- animation: ${popupCenter} 200ms linear forwards;
-`)
-
-const ModalContainer = withStyled(styled.div`
- display: inline-block;
- margin: 0 auto;
- padding: 25px 20px;
- max-width: 360px;
- min-width: 240px;
- width: 86%;
- text-align: center;
- border-radius: 10px;
- background-color: #ffffff;
-`)
-
-const ModalTitle = withStyled(styled.h4`
- font-size: 20px;
- font-weight: bold;
- line-height: 1.5;
- color: ${(props) =&gt; props.theme.font100};
- text-align: center;
-`)
-
-const ModalContent = withStyled(styled.div`
- padding: 30px 0 25px;
-`)
-
-const ModalClose = styled.div`
- margin: 40px auto 0;
- width: 26px;
- height: 26px;
- background-size: 100% 100%;
- background-repeat: no-repeat;
- background-image: url(${iconClose});
-`
-
-const ModalComponent = ({ title, children, onClick }) =&gt; (
- &lt;maskbasic onclick=&quot;{onClick}&quot;&gt;
-   &lt;maskcenter&gt;
-     &lt;modalcontainer onclick=&quot;{(e)&quot; =&gt; e.stopPropagation()}&gt;
-       &lt;modaltitle&gt;{title}&lt;/modaltitle&gt;
-       &lt;modalcontent&gt;{children}&lt;/modalcontent&gt;
-     &lt;/modalcontainer&gt;
-     &lt;modalclose&gt;
-   &lt;/modalclose&gt;&lt;/maskcenter&gt;
- &lt;/maskbasic&gt;
-)
-
-ModalComponent.defaultProps = {
- title: '提示',
- children: '请输入提示内容',
- onClick: () =&gt; { }
-}
-
-ModalComponent.propTypes = {
- title: PropTypes.string.isRequired,
- children: PropTypes.node.isRequired,
- onClick: PropTypes.func.isRequired
-}
-
-class GlobalModalRich extends MountPoint {
- hide = () =&gt; {
-   this.removeMountPoint()
- }
-
- show = (options) =&gt; {
-   this.render(&lt;modalcomponent onclick=&quot;{this.hide}&quot; {...options}&gt;)
- }
-}
-
-export default new GlobalModalRich() 
-</code></pre></div><p></p></div></div></div><p style="font-size:14px;color:rgb(38, 38, 38);line-height:24px;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin:0px;"><br></p></div><p></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+</a></div><div class="nav-item"><a href="weixin://dl/officialaccounts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微信
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>前端知识</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>辅助项目</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/vzr9kg.html" class="sidebar-link">纯文档</a></li><li><a href="/kyle/eu5haf.html" class="sidebar-link">组件文档</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>Vue</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/szimgd.html" class="sidebar-link">iView表单验证的规则总结</a></li><li><a href="/kyle/xpnb0z.html" class="sidebar-link">项目报错整理</a></li><li><a href="/kyle/wrql1t.html" class="sidebar-link">初识vue</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>http</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/isv42c.html" class="sidebar-link">URI、URL、URN</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading open"><span>React</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/xogo6f.html" class="sidebar-link">优化React项目</a></li><li><a href="/kyle/lwlgss.html" class="sidebar-link">React.lazy</a></li><li><a href="/kyle/nfi5go.html" class="sidebar-link">canvas生成笔记图片</a></li><li><a href="/kyle/dz8c7t.html" class="sidebar-link">图片上传</a></li><li><a href="/kyle/gqmosx.html" class="sidebar-link">列表渲染</a></li><li><a href="/kyle/rtgslb.html" class="sidebar-link">CustomEvent</a></li><li><a href="/kyle/lqnqs2.html" class="sidebar-link">恢复高度</a></li><li><a href="/kyle/qa56hz.html" class="sidebar-link">React v16 的生命周期</a></li><li><a href="/kyle/hipyvh.html" aria-current="page" class="active sidebar-link">页面间传值</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/kyle/hipyvh.html#父传子" class="sidebar-link">父传子</a></li><li class="sidebar-sub-header"><a href="/kyle/hipyvh.html#子传父-不带参数" class="sidebar-link">子传父--不带参数</a></li><li class="sidebar-sub-header"><a href="/kyle/hipyvh.html#子传父-带参数" class="sidebar-link">子传父--带参数</a></li><li class="sidebar-sub-header"><a href="/kyle/hipyvh.html#中间件" class="sidebar-link">中间件</a></li></ul></li><li><a href="/kyle/dne6xx.html" class="sidebar-link">useEffect, useMemo, useCallback</a></li><li><a href="/kyle/gd3zbi.html" class="sidebar-link">Hook使用规则</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>包管理工具</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/plcote.html" class="sidebar-link">npm包管理</a></li><li><a href="/kyle/rg3apf.html" class="sidebar-link">cnpm</a></li><li><a href="/kyle/kz5ien.html" class="sidebar-link">yum命令详解</a></li><li><a href="/kyle/fkrp70.html" class="sidebar-link">yarn使用</a></li><li><a href="/kyle/efpshd.html" class="sidebar-link">nvm给服务器安装node</a></li><li><a href="/kyle/fg9nxv.html" class="sidebar-link">nrm来切换npm源</a></li><li><a href="/kyle/nn5kpo.html" class="sidebar-link">wget--linux</a></li><li><a href="/kyle/yze60n.html" class="sidebar-link">homebrew--mac</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>CentOS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/okel38.html" class="sidebar-link">sftp上传、下载文件</a></li><li><a href="/kyle/ehkgmt.html" class="sidebar-link">环境配置-mysql</a></li><li><a href="/kyle/mwi0hx.html" class="sidebar-link">防火墙-firewalld</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>Git</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/zv1n2e.html" class="sidebar-link">git config 设置</a></li><li><a href="/kyle/nstgdi.html" class="sidebar-link">git常用命令，及.gitignore的配置</a></li><li><a href="/kyle/agvglc.html" class="sidebar-link">git branch</a></li><li><a href="/kyle/vwg967.html" class="sidebar-link">git stash</a></li><li><a href="/kyle/qa1hqb.html" class="sidebar-link">git tag</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>微信小程序</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/muvdeb.html" class="sidebar-link">生命周期</a></li><li><a href="/kyle/fyncmu.html" class="sidebar-link">页面间传值-未写</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>TypeScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group is-sub-group depth-2"><p class="sidebar-heading open"><span>2019--自学</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/cqbaxh.html" class="sidebar-link">typescript（一）-- 概述</a></li><li><a href="/kyle/ybzci8.html" class="sidebar-link">typescript（二）-- 基础类型</a></li><li><a href="/kyle/ab0g2p.html" class="sidebar-link">typescript（三）-- 高级类型</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-2"><p class="sidebar-heading"><span>2020--掘金小册子</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/st25ew.html" class="sidebar-link">简介-未写</a></li></ul></section></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>Css</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/ixgreg.html" class="sidebar-link">CSS巧计</a></li><li><a href="/kyle/dgzi3b.html" class="sidebar-link">CSS优雅</a></li><li><a href="/kyle/cquds0.html" class="sidebar-link">CSS书写</a></li><li><a href="/kyle/zcgzn0.html" class="sidebar-link">CSS Modules实现</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>js代码优化</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/bno2ak.html" class="sidebar-link">map简写</a></li><li><a href="/kyle/vgr7ir.html" class="sidebar-link">多次异步</a></li><li><a href="/kyle/bmmy2d.html" class="sidebar-link">js轮询</a></li></ul></section></li><li><a href="/kyle/hmulm7.html" class="sidebar-link">待学习</a></li><li><a href="/kyle/rdo87x.html" class="sidebar-link">axios总结</a></li><li><a href="/kyle/adt1bq.html" class="sidebar-link">js防抖和节流</a></li><li><a href="/kyle/ya1due.html" class="sidebar-link">退出页面</a></li><li><a href="/kyle/wl5cyt.html" class="sidebar-link">前端模块化--循环加载问题</a></li><li><a href="/kyle/nx9pmr.html" class="sidebar-link">判断版本号ts</a></li><li><a href="/kyle/rqhtqu.html" class="sidebar-link">REST Client</a></li><li><a href="/kyle/atdfod.html" class="sidebar-link">微信内h5调整字体问题</a></li><li><a href="/kyle/qe0hfx.html" class="sidebar-link">前端宝石💎for...of</a></li><li><a href="/kyle/ygn2l2.html" class="sidebar-link">比较版本号</a></li><li><a href="/kyle/ruv59q.html" class="sidebar-link">chrome扩展</a></li><li><a href="/kyle/cvhk02.html" class="sidebar-link">移动端页面链接美化</a></li><li><a href="/kyle/lowv8u.html" class="sidebar-link">ignore-prettier-eslint</a></li><li><a href="/kyle/ix6hg3.html" class="sidebar-link">数据格式化</a></li><li><a href="/kyle/nk4m5g.html" class="sidebar-link">curl命令</a></li><li><a href="/kyle/lb6zw4.html" class="sidebar-link">条件判断</a></li><li><a href="/kyle/ohg6rg.html" class="sidebar-link">优雅条件判断</a></li><li><a href="/kyle/saanpc.html" class="sidebar-link">少见问题</a></li><li><a href="/kyle/oibqpy.html" class="sidebar-link">添加随机码</a></li><li><a href="/kyle/ngb45u.html" class="sidebar-link">ES7、ES8、ES9、ES10</a></li><li><a href="/kyle/qago0e.html" class="sidebar-link">解构</a></li><li><a href="/kyle/el849f.html" class="sidebar-link">闭包&amp;内存泄漏</a></li><li><a href="/kyle/es3vml.html" class="sidebar-link">Angular</a></li><li><a href="/kyle/cm9fdg.html" class="sidebar-link">this指向</a></li><li><a href="/kyle/tpgpg0.html" class="sidebar-link">原型链</a></li><li><a href="/kyle/lq3gzm.html" class="sidebar-link">页面渲染性能优化</a></li><li><a href="/kyle/ofmc9g.html" class="sidebar-link">js微任务和宏任务</a></li><li><a href="/kyle/zev2mn.html" class="sidebar-link">Object方法</a></li><li><a href="/kyle/zy95lc.html" class="sidebar-link">FileReader总结</a></li><li><a href="/kyle/xi1ukg.html" class="sidebar-link">sendBeacon统计数据</a></li><li><a href="/kyle/dd4f3r.html" class="sidebar-link">Promise总结</a></li><li><a href="/kyle/vouxdc.html" class="sidebar-link">Fetch总结</a></li><li><a href="/kyle/bf3n8q.html" class="sidebar-link">async/await总结</a></li><li><a href="/kyle/pil8ix.html" class="sidebar-link">有趣js</a></li><li><a href="/kyle/stcvxp.html" class="sidebar-link">Web Components总结</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>实用技术</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/ylupsb.html" class="sidebar-link">table 选择</a></li><li><a href="/kyle/beu22k.html" class="sidebar-link">Echart</a></li><li><a href="/kyle/frwav4.html" class="sidebar-link">mockjs</a></li><li><a href="/kyle/lg03d9.html" class="sidebar-link">PDF预览</a></li><li><a href="/kyle/ugxekk.html" class="sidebar-link">axios 请求超时重发</a></li><li><a href="/kyle/ow0aeq.html" class="sidebar-link">下载文件流</a></li><li><a href="/kyle/gsgzve.html" class="sidebar-link">生成excel</a></li><li><a href="/kyle/rug0wr.html" class="sidebar-link">promise 并发 concurrency</a></li><li><a href="/kyle/qt7g94.html" class="sidebar-link">js获取excel内容</a></li><li><a href="/kyle/bohp9t.html" class="sidebar-link">批量请求--控制并发数</a></li><li><a href="/kyle/ggh84f.html" class="sidebar-link">js唤起微信</a></li><li><a href="/kyle/wwnc3k.html" class="sidebar-link">微信支付</a></li><li><a href="/kyle/sgw1b4.html" class="sidebar-link">eruda调试神器</a></li><li><a href="/kyle/kvw1y2.html" class="sidebar-link">doc转markdown</a></li><li><a href="/kyle/onog0m.html" class="sidebar-link">图片水印</a></li><li><a href="/kyle/ccln9z.html" class="sidebar-link">url 解析和取参</a></li><li><a href="/kyle/tquxyp.html" class="sidebar-link">微信公众平台图文消息的链接组成</a></li><li><a href="/kyle/roxct7.html" class="sidebar-link">前端业务错误码</a></li><li><a href="/kyle/hg6twf.html" class="sidebar-link">地图画区</a></li><li><a href="/kyle/ihd3eq.html" class="sidebar-link">MEGA7使用</a></li><li><a href="/kyle/gkcrxd.html" class="sidebar-link">chrome打开微信h5页面</a></li><li><a href="/kyle/evnxrm.html" class="sidebar-link">视频播放--自动播放</a></li><li><a href="/kyle/rkc1dh.html" class="sidebar-link">视频播放--全屏处理</a></li><li><a href="/kyle/qcfngw.html" class="sidebar-link">js编码解码</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>关于工具·开发</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/xq7t8s.html" class="sidebar-link">好用的全局包</a></li><li><a href="/kyle/dgpiw4.html" class="sidebar-link">提升js性能</a></li><li><a href="/kyle/myrc71.html" class="sidebar-link">vscode好用插件</a></li><li><a href="/kyle/kwlnto.html" class="sidebar-link">.zshrc 修改</a></li><li><a href="/kyle/gpfmrm.html" class="sidebar-link">项目约定</a></li><li><a href="/kyle/lr7omg.html" class="sidebar-link">移动端开发</a></li><li><a href="/kyle/wy6lnr.html" class="sidebar-link">命名规范</a></li><li><a href="/kyle/hv33bt.html" class="sidebar-link">Markdown使用实例</a></li><li><a href="/kyle/vm6b1k.html" class="sidebar-link">多人协作开发规范</a></li><li><a href="/kyle/rdw8v4.html" class="sidebar-link">前端配置mac</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>网络知识</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/its1yz.html" class="sidebar-link">SEO原理和优化</a></li><li><a href="/kyle/yzf7mo.html" class="sidebar-link">HTTP</a></li><li><a href="/kyle/zkellg.html" class="sidebar-link">HTML转义字符对照表</a></li><li><a href="/kyle/ug12wb.html" class="sidebar-link">HTTP状态码详解</a></li><li><a href="/kyle/bi23qp.html" class="sidebar-link">Content-Type</a></li><li><a href="/kyle/kquhcr.html" class="sidebar-link">TCP/UDP</a></li><li><a href="/kyle/ny4m8q.html" class="sidebar-link">TCP/UDP常见端口参考</a></li><li><a href="/kyle/rh3bto.html" class="sidebar-link">ASCII对照表</a></li><li><a href="/kyle/swf8pt.html" class="sidebar-link">网页字体参考</a></li><li><a href="/kyle/zfbvzp.html" class="sidebar-link">跨域</a></li><li><a href="/kyle/gct9ae.html" class="sidebar-link">其他知识</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>解决办法</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/qyg7b1.html" class="sidebar-link">页面处理巨大数据</a></li><li><a href="/kyle/vr9dt5.html" class="sidebar-link">Nginx的 HTTP 499 状态码处理</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>专业名词</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/yn50az.html" class="sidebar-link">QPS</a></li><li><a href="/kyle/qgteos.html" class="sidebar-link">package.json详解</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>读书</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading open"><span>掘金经验</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/xlvwvl.html" class="sidebar-link">康威定律</a></li><li><a href="/kyle/rggg35.html" class="sidebar-link">架构师</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>HTTP／2基础教程</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/wlych6.html" class="sidebar-link">Web性能的最佳实践</a></li><li><a href="/kyle/glzmk3.html" class="sidebar-link">Web响应--关键性能指标</a></li><li><a href="/kyle/owi0qq.html" class="sidebar-link">Web响应--优化--HTTP/2</a></li><li><a href="/kyle/vwhq00.html" class="sidebar-link">Web响应--优化--服务端推送</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>《精通css》第三版</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/gi59fg.html" class="sidebar-link">第一天-未写</a></li></ul></section></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>杂学</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading open"><span>游玩</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/tts27g.html" class="sidebar-link">青岛</a></li><li><a href="/kyle/ezw891.html" class="sidebar-link">西安</a></li><li><a href="/kyle/nr29yb.html" class="sidebar-link">天津</a></li><li><a href="/kyle/av8y0q.html" class="sidebar-link">北京</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>理财</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/ry47ru.html" class="sidebar-link">价值投资法</a></li><li><a href="/kyle/bsiwar.html" class="sidebar-link">资金分配</a></li><li><a href="/kyle/gr4wqs.html" class="sidebar-link">风险等级</a></li><li><a href="/kyle/dtewcf.html" class="sidebar-link">投资顺序</a></li><li><a href="/kyle/gxzczh.html" class="sidebar-link">余额宝是个分水岭</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>给老婆的教程</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/ezampw.html" class="sidebar-link">乘机要求</a></li><li><a href="/kyle/eo5l73.html" class="sidebar-link">安装adobe indesign</a></li><li><a href="/kyle/mv1x6l.html" class="sidebar-link">破解软件</a></li><li><a href="/kyle/vd51ii.html" class="sidebar-link">u盘、硬盘问题</a></li><li><a href="/kyle/csl7ou.html" class="sidebar-link">ssTap 翻墙</a></li><li><a href="/kyle/bik7u7.html" class="sidebar-link">查看密码</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>哲理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/qgcg9u.html" class="sidebar-link">杨笠到底说啥了让这么多人反感？</a></li><li><a href="/kyle/dfq18o.html" class="sidebar-link">创业</a></li><li><a href="/kyle/hyvqi3.html" class="sidebar-link">人生</a></li><li><a href="/kyle/phbr3v.html" class="sidebar-link">编程</a></li><li><a href="/kyle/quy23w.html" class="sidebar-link">职场</a></li><li><a href="/kyle/apg82h.html" class="sidebar-link">知乎精选</a></li><li><a href="/kyle/zrqivm.html" class="sidebar-link">拼搏的意义</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>Excel</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/lnadeg.html" class="sidebar-link">更改日期</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>装修</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/oi0f85.html" class="sidebar-link">买新房流程</a></li><li><a href="/kyle/yzgdkq.html" class="sidebar-link">家装注意事项</a></li><li><a href="/kyle/cvv7ox.html" class="sidebar-link">地板or瓷砖</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>茶叶</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/nvd0og.html" class="sidebar-link">茶叶的分类</a></li><li><a href="/kyle/vy7e6o.html" class="sidebar-link">合适的茶叶与注意事项</a></li><li><a href="/kyle/usxmag.html" class="sidebar-link">区分茶叶的好坏</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>红葡萄酒</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/kyle/oqz9zt.html" class="sidebar-link">红酒和葡萄酒有什么区别</a></li><li><a href="/kyle/opxkta.html" class="sidebar-link">葡萄酒陈年</a></li><li><a href="/kyle/fiiet7.html" class="sidebar-link">单宁简介</a></li></ul></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="页面间传值"><a href="#页面间传值" class="header-anchor">#</a> 页面间传值</h1> <p><a name="UrTyD"></a></p> <h2 id="父传子"><a href="#父传子" class="header-anchor">#</a> 父传子</h2> <p><strong>使用props传值：子组件通过this.props进行接收就可以了</strong></p> <p>父组件</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> PureComponent<span class="token punctuation">,</span> Fragment <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> DocumentTitle <span class="token keyword">from</span> <span class="token string">'react-document-title'</span>
+<span class="token keyword">import</span> router <span class="token keyword">from</span> <span class="token string">'umi/router'</span>
+<span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">'styled-components'</span>
+<span class="token keyword">import</span> withStyled <span class="token keyword">from</span> <span class="token string">'@@/styles/withStyled'</span>
+<span class="token keyword">import</span> MineList <span class="token keyword">from</span> <span class="token string">'../widgets/MineList'</span> <span class="token comment">// 子组件</span>
+
+<span class="token keyword">const</span> MineInfo <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  position: relative;
+  z-index: 10;
+  margin: -20px 0 0;
+  padding: 20px 20px 0;
+  width: 100%;
+	// backgroundColor是withStyled里面的变量
+  background-color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>backgroundColor<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">; 
+  border-radius: 20px 20px 0 0;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> list <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    icon<span class="token operator">:</span> iconPlay<span class="token punctuation">,</span>
+    title<span class="token operator">:</span> <span class="token string">'我的课程'</span><span class="token punctuation">,</span>
+    rightIcon<span class="token operator">:</span> iconRight<span class="token punctuation">,</span>
+    <span class="token function-variable function">onClick</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> router<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token punctuation">{</span> pathname<span class="token operator">:</span> <span class="token string">'/lesson'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    icon<span class="token operator">:</span> iconLogo<span class="token punctuation">,</span>
+    title<span class="token operator">:</span> <span class="token string">'关于小帮'</span><span class="token punctuation">,</span>
+    rightIcon<span class="token operator">:</span> iconRight<span class="token punctuation">,</span>
+    <span class="token function-variable function">onClick</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span> pathname<span class="token operator">:</span> <span class="token string">'/document/about'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+
+<span class="token keyword">class</span> <span class="token class-name">MinePage</span> <span class="token keyword">extends</span> <span class="token class-name">PureComponent</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> account<span class="token operator">:</span> <span class="token punctuation">{</span> account <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">DocumentTitle</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>我的<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Fragment</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">MineInfo</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+            </span><span class="token punctuation">{</span>list<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+              <span class="token comment">// {...item} 向子组件传递参数</span>
+              <span class="token comment">// {...item} 向子组件传递参数</span>
+              <span class="token comment">// {...item} 向子组件传递参数</span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">MineList</span></span> <span class="token spread"><span class="token punctuation">{</span><span class="token operator">...</span>item<span class="token punctuation">}</span></span> <span class="token attr-name">key</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span> <span class="token comment">// 子组件 </span>
+            <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">MineInfo</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Fragment</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">DocumentTitle</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> MinePage
+</code></pre></div><p>子组件</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> PropTypes <span class="token keyword">from</span> <span class="token string">'prop-types'</span>
+<span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">'styled-components'</span>
+<span class="token keyword">import</span> withStyled <span class="token keyword">from</span> <span class="token string">'@@/styles/withStyled'</span>
+
+<span class="token keyword">const</span> Container <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  width: 100%;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  img:nth-of-type(1) {
+    width: 28px;
+    height: 28px;
+    margin: 0 16px 0 0;
+  }
+  span {
+    flex: 1;
+  }
+  img:nth-of-type(2) {
+    width: 20px;
+    height: 20px;
+  }
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">MineList</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> title<span class="token punctuation">,</span> icon<span class="token punctuation">,</span> rightIcon<span class="token punctuation">,</span> onClick <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Container</span></span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>onClick<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>icon<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>title<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>rightIcon<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Container</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+MineList<span class="token punctuation">.</span>propTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>string<span class="token punctuation">.</span>isRequired<span class="token punctuation">,</span>
+  icon<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>string<span class="token punctuation">.</span>isRequired<span class="token punctuation">,</span>
+  rightIcon<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>string<span class="token punctuation">.</span>isRequired<span class="token punctuation">,</span>
+  onClick<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>func
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> MineList
+</code></pre></div><p><a name="vOqGR"></a></p> <h2 id="子传父-不带参数"><a href="#子传父-不带参数" class="header-anchor">#</a> 子传父--不带参数</h2> <p><strong>子组件向父组件传值需要绑定一个事件，然后事件是父组件传递过来的this.props.event来进行值的更替</strong><br>**<br>父组件</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> PureComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> router <span class="token keyword">from</span> <span class="token string">'umi/router'</span>
+<span class="token keyword">import</span> PropTypes <span class="token keyword">from</span> <span class="token string">'prop-types'</span>
+<span class="token keyword">import</span> styled<span class="token punctuation">,</span> <span class="token punctuation">{</span> createGlobalStyle <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'styled-components'</span>
+<span class="token keyword">import</span> withStyled <span class="token keyword">from</span> <span class="token string">'@@/styles/withStyled'</span>
+<span class="token keyword">import</span> GlobalModalRich <span class="token keyword">from</span> <span class="token string">'@@/components/Modal/Rich'</span>
+<span class="token keyword">import</span> FeedBack <span class="token keyword">from</span> <span class="token string">'../FeedBack'</span> <span class="token comment">// 子组件</span>
+
+<span class="token keyword">const</span> NavbarPaddingSafe <span class="token operator">=</span> createGlobalStyle<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  #app {
+    padding-bottom: 49px;
+  }
+</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token keyword">const</span> NavbarContainer <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  max-width: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>maxWidth<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  box-shadow: 0 -6px 12px 0 rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> NavbarGroup <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  display: flex;
+  align-items: center;
+  padding: 7px 0 6px;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> NavbarButton <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  flex: 25;
+  padding: 22px 0 0;
+  font-size: 10px;
+  line-height: 14px;
+  color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>font400<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  text-align: center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>image<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">);
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ResourceNavbarButton</span> <span class="token keyword">extends</span> <span class="token class-name">PureComponent</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+    <span class="token comment">// uniqueId、feedbackStatus是父组件传递进来的值</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> uniqueId<span class="token punctuation">,</span> feedbackStatus <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props
+    <span class="token keyword">this</span><span class="token punctuation">.</span>uniqueId <span class="token operator">=</span> uniqueId
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      feedbackStatus<span class="token operator">:</span> feedbackStatus
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">componentWillUnmount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    GlobalModalRich<span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  action <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">handleShowFeedback</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> feedback <span class="token operator">=</span> <span class="token punctuation">{</span>
+        title<span class="token operator">:</span> <span class="token string">'评价本节'</span><span class="token punctuation">,</span>
+        <span class="token comment">// 调用子组件</span>
+        <span class="token comment">// handleConfirm接收子组件的事件或参数</span>
+        <span class="token comment">// handleConfirm接收子组件的事件或参数</span>
+        <span class="token comment">// handleConfirm接收子组件的事件或参数</span>
+        children<span class="token operator">:</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">FeedBack</span></span> <span class="token attr-name">uniqueId</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>uniqueId<span class="token punctuation">}</span></span> <span class="token attr-name">handleConfirm</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span>action<span class="token punctuation">.</span><span class="token function">handleFeedback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span><span class="token punctuation">,</span>
+        onClick<span class="token operator">:</span> GlobalModalRich<span class="token punctuation">.</span>hide
+      <span class="token punctuation">}</span>
+      GlobalModalRich<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span>feedback<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 接收到子组件到事件或状态后，触发到事件</span>
+    <span class="token comment">// 接收到子组件到事件或状态后，触发到事件</span>
+    <span class="token comment">// 接收到子组件到事件或状态后，触发到事件</span>
+    <span class="token function-variable function">handleFeedback</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> feedbackStatus<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span><span class="token function">handleConfirm</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> feedbackStatus <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> noteListStatus <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">NavbarContainer</span></span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>ios-padding-safe<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">NavbarPaddingSafe</span></span> <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">NavbarGroup</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">NavbarButton</span></span> <span class="token attr-name">image</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>iconFeedback<span class="token punctuation">}</span></span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>action<span class="token punctuation">.</span><span class="token function">handleShowFeedback</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">评价本节</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">NavbarButton</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">NavbarGroup</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">NavbarContainer</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+ResourceNavbarButton<span class="token punctuation">.</span>propTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+  uniqueId<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>string<span class="token punctuation">.</span>isRequired<span class="token punctuation">,</span>
+  feedbackStatus<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>bool<span class="token punctuation">.</span>isRequired<span class="token punctuation">,</span>
+  noteListStatus<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>bool<span class="token punctuation">.</span>isRequired
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> ResourceNavbarButton
+</code></pre></div><p>子组件</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> PureComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> PropTypes <span class="token keyword">from</span> <span class="token string">'prop-types'</span>
+<span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">'styled-components'</span>
+<span class="token keyword">import</span> classnames <span class="token keyword">from</span> <span class="token string">'classnames'</span>
+<span class="token keyword">import</span> withStyled <span class="token keyword">from</span> <span class="token string">'@@/styles/withStyled'</span>
+<span class="token keyword">import</span> resourceService <span class="token keyword">from</span> <span class="token string">'@@/services/resource'</span>
+<span class="token keyword">import</span> GlobalModalRich <span class="token keyword">from</span> <span class="token string">'@@/components/Modal/Rich'</span>
+
+<span class="token keyword">import</span> iconBad <span class="token keyword">from</span> <span class="token string">'./icon-bad.png'</span>
+<span class="token keyword">import</span> iconBadChecked <span class="token keyword">from</span> <span class="token string">'./icon-bad-checked.png'</span>
+<span class="token keyword">import</span> iconGood <span class="token keyword">from</span> <span class="token string">'./icon-good.png'</span>
+<span class="token keyword">import</span> iconGoodChecked <span class="token keyword">from</span> <span class="token string">'./icon-good-checked.png'</span>
+<span class="token keyword">import</span> iconSimple <span class="token keyword">from</span> <span class="token string">'./icon-simple.png'</span>
+<span class="token keyword">import</span> iconSimpleChecked <span class="token keyword">from</span> <span class="token string">'./icon-simple-checked.png'</span>
+
+<span class="token keyword">const</span> Container <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  display: flex;
+  align-items: center;
+  justify-content: center;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> Item <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  flex: 1;
+  font-size: 14PX;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>font100<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  padding: 28px 0 0;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  span {
+    font-size: 10PX;
+    color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>font400<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  }
+  &amp;.focus {
+    span {
+      color: #FFC300;
+    }
+  }
+  &amp;.bad {
+    background-image: url(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>iconBad<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">);
+    &amp;.focus {
+      background-image: url(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>iconBadChecked<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">);
+    }
+  }
+  &amp;.good {
+    background-image: url(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>iconGood<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">);
+    &amp;.focus {
+      background-image: url(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>iconGoodChecked<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">);
+    }
+  }
+  &amp;.simple {
+    background-image: url(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>iconSimple<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">);
+    &amp;.focus {
+      background-image: url(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>iconSimpleChecked<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">);
+    }
+  }
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">class</span> <span class="token class-name">FeedBack</span> <span class="token keyword">extends</span> <span class="token class-name">PureComponent</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      checkedValue<span class="token operator">:</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  action <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">handleFetch</span><span class="token operator">:</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">type<span class="token punctuation">,</span> name</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> checkedValue <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>checkedValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> uniqueId <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        checkedValue<span class="token operator">:</span> name
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+      <span class="token keyword">try</span> <span class="token punctuation">{</span>
+        <span class="token keyword">await</span> resourceService<span class="token punctuation">.</span><span class="token function">feedback</span><span class="token punctuation">(</span>uniqueId<span class="token punctuation">,</span> <span class="token punctuation">{</span> feedBackType<span class="token operator">:</span> type <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>message<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span>GlobalModalRich<span class="token punctuation">.</span>hide<span class="token punctuation">,</span> <span class="token number">500</span><span class="token punctuation">)</span>
+        <span class="token comment">// 向父组件发送事件，也可以传递参数</span>
+        <span class="token comment">// 向父组件发送事件，也可以传递参数</span>
+        <span class="token comment">// 向父组件发送事件，也可以传递参数</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span><span class="token function">handleConfirm</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> checkedValue <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state
+    <span class="token keyword">const</span> badClassName <span class="token operator">=</span> <span class="token function">classnames</span><span class="token punctuation">(</span><span class="token string">'bad'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> focus<span class="token operator">:</span> checkedValue <span class="token operator">===</span> <span class="token string">'bad'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> goodClassName <span class="token operator">=</span> <span class="token function">classnames</span><span class="token punctuation">(</span><span class="token string">'good'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> focus<span class="token operator">:</span> checkedValue <span class="token operator">===</span> <span class="token string">'good'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> simpleClassName <span class="token operator">=</span> <span class="token function">classnames</span><span class="token punctuation">(</span><span class="token string">'simple'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> focus<span class="token operator">:</span> checkedValue <span class="token operator">===</span> <span class="token string">'simple'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Container</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Item</span></span> <span class="token attr-name">className</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>badClassName<span class="token punctuation">}</span></span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>action<span class="token punctuation">.</span><span class="token function">handleFetch</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'bad'</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">没听懂</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Item</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Item</span></span> <span class="token attr-name">className</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>goodClassName<span class="token punctuation">}</span></span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>action<span class="token punctuation">.</span><span class="token function">handleFetch</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'good'</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">有收获</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Item</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Item</span></span> <span class="token attr-name">className</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>simpleClassName<span class="token punctuation">}</span></span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>action<span class="token punctuation">.</span><span class="token function">handleFetch</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'simple'</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">太简单</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Item</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Container</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+FeedBack<span class="token punctuation">.</span>propTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+  uniqueId<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>string<span class="token punctuation">.</span>isRequired
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> FeedBack
+</code></pre></div><p><a name="dmebX"></a></p> <h2 id="子传父-带参数"><a href="#子传父-带参数" class="header-anchor">#</a> 子传父--带参数</h2> <p>父组件</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> PureComponent<span class="token punctuation">,</span> Fragment <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> DocumentTitle <span class="token keyword">from</span> <span class="token string">'react-document-title'</span>
+<span class="token keyword">import</span> ExerciseCard <span class="token keyword">from</span> <span class="token string">'../widgets/ExerciseCard'</span>
+
+<span class="token keyword">class</span> <span class="token class-name">DetailPage</span> <span class="token keyword">extends</span> <span class="token class-name">PureComponent</span> <span class="token punctuation">{</span>
+	<span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  
+  action <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">handleChangeDate</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">exerciseId<span class="token punctuation">,</span> type<span class="token punctuation">,</span> value</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>exerciseId<span class="token punctuation">,</span> type<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token comment">// 获取子组件传递过来的值</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+  
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">DocumentTitle</span></span> <span class="token attr-name">title</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>title<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Fragment</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token punctuation">{</span>exerciseList<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ExerciseCard</span></span>
+              <span class="token spread"><span class="token punctuation">{</span><span class="token operator">...</span>item<span class="token punctuation">}</span></span>
+              <span class="token attr-name">isFinished</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>isFinished<span class="token punctuation">}</span></span>
+              <span class="token attr-name">handleChangeDate</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">exerciseId<span class="token punctuation">,</span> type<span class="token punctuation">,</span> value</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>action<span class="token punctuation">.</span><span class="token function">handleChangeDate</span><span class="token punctuation">(</span>exerciseId<span class="token punctuation">,</span> type<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+              <span class="token attr-name">key</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>item<span class="token punctuation">.</span>rowKey<span class="token punctuation">}</span></span>
+              <span class="token punctuation">/&gt;</span></span>
+          <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Fragment</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">DocumentTitle</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>子组件</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> PropTypes <span class="token keyword">from</span> <span class="token string">'prop-types'</span>
+<span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">'styled-components'</span>
+<span class="token keyword">import</span> withStyled <span class="token keyword">from</span> <span class="token string">'@@/styles/withStyled'</span>
+<span class="token keyword">import</span> classnames <span class="token keyword">from</span> <span class="token string">'classnames'</span>
+
+<span class="token keyword">import</span> iconRadio <span class="token keyword">from</span> <span class="token string">'./icon-radio.png'</span>
+<span class="token keyword">import</span> iconRadioCorrect <span class="token keyword">from</span> <span class="token string">'./icon-radio-correct.png'</span>
+<span class="token keyword">import</span> iconCheckout <span class="token keyword">from</span> <span class="token string">'./icon-checkout.png'</span>
+<span class="token keyword">import</span> iconCheckoutCorrect <span class="token keyword">from</span> <span class="token string">'./icon-checkout-correct.png'</span>
+<span class="token keyword">import</span> iconCorrect <span class="token keyword">from</span> <span class="token string">'./icon-correct.png'</span>
+<span class="token keyword">import</span> iconWrong <span class="token keyword">from</span> <span class="token string">'./icon-wrong.png'</span>
+
+<span class="token keyword">const</span> Container <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  position: relative;
+  padding: 16px 0 8px;
+  width: 100%;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> Result <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>img<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 72px;
+  height: 72px;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> Order <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  height: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token parameter">props</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>font100<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  line-height: 20px;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> Title <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  margin: 8px 0 4px;
+  font-size: 16px;
+  text-align: justify;
+  text-align-last: left;
+  line-height: 24px;
+  color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token parameter">props</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>font100<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> Answer <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 0 8px;
+  padding: 0 0 0 40px;
+  height: 41px;
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  &amp;:before {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token parameter">props</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>icon<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &amp;:last-of-type {
+    margin: 0 0 24px;
+  }
+  &amp;.selected {
+    background-color: rgba(255, 221, 0, 0.1);
+  }
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> Analysis <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  margin: 0 0 40px;
+  padding: 16px 12px;
+  background-color: #e5e9f2;
+  border-radius: 8px;
+  border: 1px solid rgba(229, 233, 242, 1);
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> CorrectAnswer <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  font-size: 14px;
+  line-height: 18px;
+  color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token parameter">props</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>font100<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> AnswerAnalysis <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  margin: 4px 0 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token parameter">props</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>font100<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">judgeResult</span> <span class="token operator">=</span> <span class="token parameter">status</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token operator">+</span>status<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token number">0</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> <span class="token string">''</span>
+    <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> iconCorrect
+    <span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> iconWrong
+    <span class="token keyword">default</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> <span class="token string">''</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">judgeType</span> <span class="token operator">=</span> <span class="token parameter">type</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> typeDescription <span class="token operator">=</span> <span class="token string">'单选题'</span>
+    <span class="token keyword">const</span> iconType <span class="token operator">=</span> iconRadio
+    <span class="token keyword">const</span> iconSelect <span class="token operator">=</span> iconRadioCorrect
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> typeDescription<span class="token punctuation">,</span> iconType<span class="token punctuation">,</span> iconSelect <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> typeDescription <span class="token operator">=</span> <span class="token string">'多选题'</span>
+    <span class="token keyword">const</span> iconType <span class="token operator">=</span> iconCheckout
+    <span class="token keyword">const</span> iconSelect <span class="token operator">=</span> iconCheckoutCorrect
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> typeDescription<span class="token punctuation">,</span> iconType<span class="token punctuation">,</span> iconSelect <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">judgeLabel</span> <span class="token operator">=</span> <span class="token parameter">index</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> String<span class="token punctuation">.</span><span class="token function">fromCharCode</span><span class="token punctuation">(</span><span class="token number">65</span> <span class="token operator">+</span> index<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">ExerciseCard</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> isFinished<span class="token punctuation">,</span> exerciseId<span class="token punctuation">,</span> title<span class="token punctuation">,</span> type<span class="token punctuation">,</span> status<span class="token punctuation">,</span> content<span class="token punctuation">,</span> options<span class="token punctuation">,</span> analysis<span class="token punctuation">,</span> handleChangeDate <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> iconResult <span class="token operator">=</span> <span class="token function">judgeResult</span><span class="token punctuation">(</span>status<span class="token punctuation">)</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> typeDescription<span class="token punctuation">,</span> iconType<span class="token punctuation">,</span> iconSelect <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">judgeType</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span>
+  <span class="token keyword">let</span> rightResult <span class="token operator">=</span> <span class="token string">''</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Container</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token punctuation">{</span>iconResult <span class="token operator">&amp;&amp;</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Result</span></span> <span class="token attr-name">src</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>iconResult<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span><span class="token punctuation">}</span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Order</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token punctuation">{</span>title<span class="token punctuation">}</span><span class="token plain-text">【</span><span class="token punctuation">{</span>typeDescription<span class="token punctuation">}</span><span class="token plain-text">】
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Order</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Title</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>content<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Title</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token punctuation">{</span>options<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">const</span> <span class="token punctuation">{</span> content<span class="token punctuation">,</span> isUserAnswer<span class="token punctuation">,</span> isCorrect <span class="token punctuation">}</span> <span class="token operator">=</span> item
+          <span class="token keyword">const</span> label <span class="token operator">=</span> <span class="token function">judgeLabel</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>isCorrect<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            rightResult <span class="token operator">+=</span> label
+          <span class="token punctuation">}</span>
+          <span class="token keyword">const</span> changeResult <span class="token operator">=</span> isFinished <span class="token operator">?</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span> <span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">handleChangeDate</span><span class="token punctuation">(</span>exerciseId<span class="token punctuation">,</span> type<span class="token punctuation">,</span> index<span class="token punctuation">)</span>
+          <span class="token keyword">const</span> icon <span class="token operator">=</span> isUserAnswer <span class="token operator">?</span> iconSelect <span class="token operator">:</span> iconType
+          <span class="token keyword">return</span> <span class="token punctuation">(</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Answer</span></span> <span class="token attr-name">className</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token function">classnames</span><span class="token punctuation">(</span><span class="token punctuation">{</span> selected<span class="token operator">:</span> isUserAnswer <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span> <span class="token attr-name">icon</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>icon<span class="token punctuation">}</span></span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>changeResult<span class="token punctuation">}</span></span> <span class="token attr-name">key</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+              </span><span class="token punctuation">{</span>label<span class="token punctuation">}</span><span class="token plain-text">.</span><span class="token punctuation">{</span>content<span class="token punctuation">}</span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Answer</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token punctuation">{</span>isFinished <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Analysis</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">CorrectAnswer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">正确答案：</span><span class="token punctuation">{</span>rightResult<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">CorrectAnswer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">AnswerAnalysis</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">解析：</span><span class="token punctuation">{</span>analysis<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">AnswerAnalysis</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Analysis</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Container</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+ExerciseCard<span class="token punctuation">.</span>propTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+  isFinished<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>bool<span class="token punctuation">,</span>
+  exerciseId<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>number<span class="token punctuation">,</span>
+  title<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>string<span class="token punctuation">,</span>
+  type<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>number<span class="token punctuation">,</span>
+  status<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>number<span class="token punctuation">,</span>
+  content<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>string<span class="token punctuation">,</span>
+  options<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>array<span class="token punctuation">,</span>
+  analysis<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>string<span class="token punctuation">,</span>
+  handleChangeDate<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>func<span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> ExerciseCard
+</code></pre></div><p><a name="DUXUx"></a></p> <h2 id="中间件"><a href="#中间件" class="header-anchor">#</a> 中间件</h2> <p>withStyled.js--基础颜色组件</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> forwardRef <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> ThemeProvider<span class="token punctuation">,</span> keyframes <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'styled-components'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> theme <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 基础颜色</span>
+  primaryColor<span class="token operator">:</span> <span class="token string">'rgba(255, 221, 0, 1)'</span><span class="token punctuation">,</span>
+  secondaryColor<span class="token operator">:</span> <span class="token string">'rgba(255, 196, 1, 1)'</span><span class="token punctuation">,</span>
+  linkColor<span class="token operator">:</span> <span class="token string">'rgba(24, 170, 242, 1)'</span><span class="token punctuation">,</span>
+  borderColor<span class="token operator">:</span> <span class="token string">'rgba(229, 233, 242, 1)'</span><span class="token punctuation">,</span>
+  backgroundColor<span class="token operator">:</span> <span class="token string">'rgba(245, 247, 250, 1)'</span><span class="token punctuation">,</span>
+  maskColor<span class="token operator">:</span> <span class="token string">'rgba(0, 0, 0, 0.5)'</span><span class="token punctuation">,</span>
+  shadowColor<span class="token operator">:</span> <span class="token string">'rgba(200, 200, 200, 0.05)'</span><span class="token punctuation">,</span>
+  highLightColor<span class="token operator">:</span> <span class="token string">'rgba(34, 34, 34, 1);'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 基金相关</span>
+  increaseColor<span class="token operator">:</span> <span class="token string">'#FC4447'</span><span class="token punctuation">,</span>
+  decreaseColor<span class="token operator">:</span> <span class="token string">'#3CC86B'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 层级</span>
+  maskZindex<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+  popupZindex<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+  dialogZindex<span class="token operator">:</span> <span class="token number">300</span><span class="token punctuation">,</span>
+  <span class="token comment">// 字体颜色</span>
+  font100<span class="token operator">:</span> <span class="token string">'#324057'</span><span class="token punctuation">,</span>
+  font200<span class="token operator">:</span> <span class="token string">'#475669'</span><span class="token punctuation">,</span>
+  font300<span class="token operator">:</span> <span class="token string">'#5E6D82'</span><span class="token punctuation">,</span>
+  font400<span class="token operator">:</span> <span class="token string">'#8492A6'</span><span class="token punctuation">,</span>
+  font500<span class="token operator">:</span> <span class="token string">'#99A9BF'</span><span class="token punctuation">,</span>
+  font600<span class="token operator">:</span> <span class="token string">'#C0CCDA'</span><span class="token punctuation">,</span>
+  importantfont<span class="token operator">:</span> <span class="token string">'#FF8026'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 宽度</span>
+  maxWidth<span class="token operator">:</span> <span class="token string">'480PX'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 加载器</span>
+  loaderPrimaryColor<span class="token operator">:</span> <span class="token string">'rgba(239, 242, 247, 1)'</span><span class="token punctuation">,</span>
+  loaderSecondaryColor<span class="token operator">:</span> <span class="token string">'rgba(239, 242, 247, 0.6)'</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> autofill <span class="token operator">=</span> keyframes<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  from {
+    background - color: transparent;
+  }
+  to {
+    background - color: transparent;
+  }
+</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> popupCenter <span class="token operator">=</span> keyframes<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  0% {
+    transform: translateY(-50%) scale(0.8);
+  }
+  100% {
+    transform: translateY(-50%) scale(1);
+  }
+</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> riseNavbar <span class="token operator">=</span> keyframes<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  0% {
+    bottom: -64px;
+  }
+  100% {
+    bottom: 0;
+  }
+</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">withStyled</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">Component</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">StyledComponent</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">props<span class="token punctuation">,</span> ref</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ThemeProvider</span></span> <span class="token attr-name">theme</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>theme<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Component</span></span> <span class="token attr-name">ref</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>ref<span class="token punctuation">}</span></span> <span class="token spread"><span class="token punctuation">{</span><span class="token operator">...</span>props<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">ThemeProvider</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span>
+
+  <span class="token keyword">return</span> <span class="token function">forwardRef</span><span class="token punctuation">(</span>StyledComponent<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> withStyled
+</code></pre></div><p>GlobalModalRich.js--模态框组件</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> PropTypes <span class="token keyword">from</span> <span class="token string">'prop-types'</span>
+<span class="token keyword">import</span> styled <span class="token keyword">from</span> <span class="token string">'styled-components'</span>
+<span class="token keyword">import</span> withStyled <span class="token keyword">from</span> <span class="token string">'@@/styles/withStyled'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> MountPoint <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@@/utils/dom'</span>
+<span class="token keyword">import</span> iconClose <span class="token keyword">from</span> <span class="token string">'@@/assets/icons/icon-close.png'</span>
+
+<span class="token keyword">const</span> MaskBasic <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>maskColor<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  z-index: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>maskZindex<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> MaskCenter <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45%;
+  transform: translateY(-50%);
+  padding: 20px;
+  text-align: center;
+  z-index: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>dialogZindex<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  animation: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>popupCenter<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> 200ms linear forwards;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> ModalContainer <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  display: inline-block;
+  margin: 0 auto;
+  padding: 25px 20px;
+  max-width: 360px;
+  min-width: 240px;
+  width: 86%;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> ModalTitle <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>h4<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>theme<span class="token punctuation">.</span>font100<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+  text-align: center;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> ModalContent <span class="token operator">=</span> <span class="token function">withStyled</span><span class="token punctuation">(</span>styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  padding: 30px 0 25px;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> ModalClose <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  margin: 40px auto 0;
+  width: 26px;
+  height: 26px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>iconClose<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">);
+</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">ModalComponent</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> title<span class="token punctuation">,</span> children<span class="token punctuation">,</span> onClick <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">MaskBasic</span></span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>onClick<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">MaskCenter</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ModalContainer</span></span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> e<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ModalTitle</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>title<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">ModalTitle</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ModalContent</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>children<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">ModalContent</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">ModalContainer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ModalClose</span></span> <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">MaskCenter</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">MaskBasic</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token punctuation">)</span>
+
+ModalComponent<span class="token punctuation">.</span>defaultProps <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token string">'提示'</span><span class="token punctuation">,</span>
+  children<span class="token operator">:</span> <span class="token string">'请输入提示内容'</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">onClick</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+ModalComponent<span class="token punctuation">.</span>propTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>string<span class="token punctuation">.</span>isRequired<span class="token punctuation">,</span>
+  children<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>node<span class="token punctuation">.</span>isRequired<span class="token punctuation">,</span>
+  onClick<span class="token operator">:</span> PropTypes<span class="token punctuation">.</span>func<span class="token punctuation">.</span>isRequired
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">GlobalModalRich</span> <span class="token keyword">extends</span> <span class="token class-name">MountPoint</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">hide</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">removeMountPoint</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function-variable function">show</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ModalComponent</span></span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>hide<span class="token punctuation">}</span></span> <span class="token spread"><span class="token punctuation">{</span><span class="token operator">...</span>options<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">GlobalModalRich</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
       ←
-      <a href="/qa56hz.html" class="prev">
+      <a href="/kyle/qa56hz.html" class="prev">
         React v16 的生命周期
-      </a></span> <span class="next"><a href="/rg3apf.html">
-        cnpm
+      </a></span> <span class="next"><a href="/kyle/dne6xx.html">
+        useEffect, useMemo, useCallback
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.a532b955.js" defer></script><script src="/assets/js/2.13e51145.js" defer></script><script src="/assets/js/36.9ffd96da.js" defer></script>
+    <script src="/kyle/assets/js/app.149d4505.js" defer></script><script src="/kyle/assets/js/2.131ca26b.js" defer></script><script src="/kyle/assets/js/56.73760a57.js" defer></script>
   </body>
 </html>
