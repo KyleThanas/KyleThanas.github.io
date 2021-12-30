@@ -10,6 +10,7 @@ yarn dev 启动服务
 yarn build 打包，打包后直接扔在根目录就可以
 
 config.js 设置
+base 注释掉，可以部署github
 base: '/kyle/', // 爬坑之路
 base: '/kyle2/', // 后端爬坑之路
 <!-- https://vuepress.vuejs.org/zh/config/#base -->
