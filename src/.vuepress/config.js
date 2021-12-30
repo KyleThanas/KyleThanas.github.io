@@ -2,12 +2,14 @@ module.exports = {
   title: 'KyleThanas',
   description: 'KyleThanas的分享',
   head: [
+    ['link', { rel: 'icon', href: '/logo.png' }],
     ['meta', { name: 'referrer', content: 'never' }],
     ['meta', { name: 'og:type', content: 'webpage' }],
     ['meta', { name: 'og:url', content: 'https://KyleThanas.github.io' }],
     ['meta', { name: 'og:title', content: 'KyleThanas知识分享' }],
     ['meta', { name: 'og:description', content: 'KyleThanas的分享' }],
   ],
+  base: '/kyle/',
   dest: '.vuepress/../../dist', //指定 vuepress build 的输出目录
   themeConfig: {
     nav: [
@@ -29,10 +31,10 @@ module.exports = {
     [
       'vuepress-plugin-yuque',
       {
-        // 后端爬坑之路
-        // repoUrl: 'https://www.yuque.com/kylethanas/admin',
         // 爬坑之路
         repoUrl: 'https://www.yuque.com/kylethanas/share',
+        // 后端爬坑之路
+        // repoUrl: 'https://www.yuque.com/kylethanas/admin',
         authToken: 'u1XU3a9AAwSEDtNjHXOXZ5ry0xlXwbHlxL49zn9a',
         html: true,
         home: {
