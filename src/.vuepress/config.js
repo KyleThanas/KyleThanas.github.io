@@ -2,9 +2,10 @@ const switchQIANDUAN = true
 const path = switchQIANDUAN ? 'share' : 'admin'
 const base = switchQIANDUAN ? '/kyle/' : '/kyle2/'
 const dest = switchQIANDUAN ? '/dist' : '/dist2'
+const title = switchQIANDUAN ? '爬坑之路' : '后端爬坑之路'
 
 module.exports = {
-  title: 'KyleThanas',
+  title: title,
   description: 'KyleThanas的分享',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -14,7 +15,7 @@ module.exports = {
     ['meta', { name: 'og:title', content: 'KyleThanas知识分享' }],
     ['meta', { name: 'og:description', content: 'KyleThanas的分享' }],
   ],
-  base: base,
+  // base: base,
   // base: '/kyle2/',
   dest: `.vuepress/../../${dest}`, //指定 vuepress build 的输出目录
   themeConfig: {
